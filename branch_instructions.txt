@@ -1,0 +1,12 @@
+1. Create new issue. In the description of the issue, state the branch name. Assign someone.
+For eg:
+Issue: Update graphs
+Branch: update-graphs
+
+2. On your own VSCode, create a new branch with the same name and enter that branch. 
+Type the following into your terminal:
+git checkout -b update-graphs
+
+3. Do the edits necessary, save, then git add, commit and push. When pushing, follow instructions for what to type.
+
+4. On GitHub, someone should compare the pull request, leave a comment and merge the request. After merging, delete the branch.
