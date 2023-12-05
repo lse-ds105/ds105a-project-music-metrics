@@ -1,3 +1,5 @@
+from scrapy import Selector
+
 def generate_song_url(song_artist, song_title):
     '''
     Returns a string of the URL for the Genius page of the song
@@ -18,7 +20,7 @@ def generate_song_url(song_artist, song_title):
 
     return song_url
 
-def scrape_lyrics(song_url):
+def scrape_lyrics(session, song_url):
     '''
     Returns a string of song lyrics, with each line separated by a new line
 
