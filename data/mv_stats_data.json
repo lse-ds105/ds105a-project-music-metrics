@@ -1,309 +1,10 @@
 [
     {
         "video_id": "kJQP7kiw5Fk",
-<<<<<<< HEAD
-        "like_count": "52535750",
-        "view_count": "8327443788",
-        "comment_count": "4228197"
-    },
-    {
-        "video_id": "JGwWNGJdvx8",
-        "like_count": "32322860",
-        "view_count": "6149089079",
-        "comment_count": "1146124"
-    },
-    {
-        "video_id": "RgKAFK5djSk",
-        "like_count": "42261477",
-        "view_count": "6108657915",
-        "comment_count": "2176982"
-    },
-    {
-        "video_id": "OPf0YbXqDm0",
-        "like_count": "21086058",
-        "view_count": "5098308617",
-        "comment_count": "605165"
-    },
-    {
-        "video_id": "09R8_2nJtjg",
-        "like_count": "15906791",
-        "view_count": "3972672437",
-        "comment_count": "418290"
-    },
-    {
-        "video_id": "hT_nvWreIhg",
-        "like_count": "17490699",
-        "view_count": "3927234249",
-        "comment_count": "488705"
-    },
-    {
-        "video_id": "CevxZvSJLk8",
-        "like_count": "16595704",
-        "view_count": "3918561114",
-        "comment_count": "774319"
-    },
-    {
-        "video_id": "pRpeEdMmmQ0",
-        "like_count": "21935987",
-        "view_count": "3795484083",
-        "comment_count": "1314224"
-    },
-    {
-        "video_id": "fRh_vgS2dFE",
-        "like_count": "16306536",
-        "view_count": "3741519222",
-        "comment_count": "868541"
-    },
-    {
-        "video_id": "lp-EO5I60KA",
-        "like_count": "14912600",
-        "view_count": "3699957274",
-        "comment_count": "372170"
-    },
-    {
-        "video_id": "0KSOMA3QBU0",
-        "like_count": "17283707",
-        "view_count": "3635555160",
-        "comment_count": "801348"
-    },
-    {
-        "video_id": "2Vv-BfVoq4g",
-        "like_count": "20500849",
-        "view_count": "3611528253",
-        "comment_count": "508464"
-    },
-    {
-        "video_id": "60ItHLz5WEA",
-        "like_count": "27564824",
-        "view_count": "3555455343",
-        "comment_count": "1264800"
-    },
-    {
-        "video_id": "aJOTlE1K90k",
-        "like_count": "21431546",
-        "view_count": "3527222505",
-        "comment_count": "662057"
-    },
-    {
-        "video_id": "YqeW9_5kURI",
-        "like_count": "16948096",
-        "view_count": "3507080772",
-        "comment_count": "454041"
-    },
-    {
-        "video_id": "nfWlot6h_JM",
-        "like_count": "13070570",
-        "view_count": "3373043770",
-        "comment_count": "574303"
-    },
-    {
-        "video_id": "e-ORhEE9VVg",
-        "like_count": "15193336",
-        "view_count": "3319473448",
-        "comment_count": "641031"
-    },
-    {
-        "video_id": "YQHsXMglC9A",
-        "like_count": "18651553",
-        "view_count": "3110821457",
-        "comment_count": "945047"
-    },
-    {
-        "video_id": "3AtDnEC4zak",
-        "like_count": "14260720",
-        "view_count": "3089650613",
-        "comment_count": "404566"
-    },
-    {
-        "video_id": "kffacxfA7G4",
-        "like_count": "24508861",
-        "view_count": "3059103695",
-        "comment_count": "4820334"
-    },
-    {
-        "video_id": "k2qgadSvNyU",
-        "like_count": "17331378",
-        "view_count": "2973069622",
-        "comment_count": "377005"
-    },
-    {
-        "video_id": "papuvlVeZg8",
-        "like_count": "13829479",
-        "view_count": "2873499425",
-        "comment_count": "303876"
-    },
-    {
-        "video_id": "pXRviuL6vMY",
-        "like_count": "18887709",
-        "view_count": "2784660244",
-        "comment_count": "628016"
-    },
-    {
-        "video_id": "5GL9JoH4Sws",
-        "like_count": "12327217",
-        "view_count": "2783925824",
-        "comment_count": "473790"
-    },
-    {
-        "video_id": "fLexgOxsZu0",
-        "like_count": "14474446",
-        "view_count": "2671542800",
-        "comment_count": "537193"
-    },
-    {
-        "video_id": "2vjPBrBU-TM",
-        "like_count": "12906816",
-        "view_count": "2658311162",
-        "comment_count": "583396"
-    },
-    {
-        "video_id": "7wtfhZwyrcc",
-        "like_count": "21480198",
-        "view_count": "2556384251",
-        "comment_count": "626758"
-    },
-    {
-        "video_id": "PIh2xe4jnpk",
-        "like_count": "11636647",
-        "view_count": "2437282480",
-        "comment_count": "252300"
-    },
-    {
-        "video_id": "rYEDA3JcQqw",
-        "like_count": "12686430",
-        "view_count": "2400199296",
-        "comment_count": "423007"
-    },
-    {
-        "video_id": "rtOvBOTyX00",
-        "like_count": "14683086",
-        "view_count": "2368888701",
-        "comment_count": "497575"
-    },
-    {
-        "video_id": "34Na4j8AVgA",
-        "like_count": "11586660",
-        "view_count": "2348220149",
-        "comment_count": "397403"
-    },
-    {
-        "video_id": "lWA2pjMjpBs",
-        "like_count": "11092140",
-        "view_count": "2266908020",
-        "comment_count": "405823"
-    },
-    {
-        "video_id": "YBHQbu5rbdQ",
-        "like_count": "11712100",
-        "view_count": "2231374489",
-        "comment_count": "338219"
-    },
-    {
-        "video_id": "PMivT7MJ41M",
-        "like_count": "13198176",
-        "view_count": "2228537596",
-        "comment_count": "385466"
-    },
-    {
-        "video_id": "8UVNT4wvIGY",
-        "like_count": "15528774",
-        "view_count": "2193491211",
-        "comment_count": "810226"
-    },
-    {
-        "video_id": "IHNzOHi8sJs",
-        "like_count": "23565035",
-        "view_count": "2147877352",
-        "comment_count": "3274611"
-    },
-    {
-        "video_id": "l0U7SxXHkPY",
-        "like_count": "10075779",
-        "view_count": "2144251080",
-        "comment_count": "226587"
-    },
-    {
-        "video_id": "hLQl3WQQoQ0",
-        "like_count": "10369523",
-        "view_count": "2118503984",
-        "comment_count": "359664"
-    },
-    {
-        "video_id": "8SbUC-UaAxE",
-        "like_count": "7365784",
-        "view_count": "2112083830",
-        "comment_count": "340374"
-    },
-    {
-        "video_id": "tt2k8PGm-TI",
-        "like_count": "14822207",
-        "view_count": "2077378130",
-        "comment_count": "407012"
-    },
-    {
-        "video_id": "q0hyYWKXF0Q",
-        "like_count": "15481352",
-        "view_count": "2074830935",
-        "comment_count": "377394"
-    },
-    {
-        "video_id": "fKopy74weus",
-        "like_count": "12534910",
-        "view_count": "2070381051",
-        "comment_count": "373454"
-    },
-    {
-        "video_id": "YykjpeuMNEk",
-        "like_count": "14559841",
-        "view_count": "1987837558",
-        "comment_count": "396290"
-    },
-    {
-        "video_id": "5qm8PH4xAss",
-        "like_count": "11879106",
-        "view_count": "1936602854",
-        "comment_count": "314338"
-    },
-    {
-        "video_id": "2S24-y0Ij3Y",
-        "like_count": "25162607",
-        "view_count": "1901385854",
-        "comment_count": "2480648"
-    },
-    {
-        "video_id": "LjhCEhWiKXk",
-        "like_count": "8158376",
-        "view_count": "1898206825",
-        "comment_count": "245758"
-    },
-    {
-        "video_id": "YVkUvmDQ3HY",
-        "like_count": "13108691",
-        "view_count": "1811839115",
-        "comment_count": "366821"
-    },
-    {
-        "video_id": "L3wKzyIN1yk",
-        "like_count": "11867547",
-        "view_count": "1804729852",
-        "comment_count": "244723"
-    },
-    {
-        "video_id": "1G4isv_Fylg",
-        "like_count": "9029926",
-        "view_count": "1804970641",
-        "comment_count": "351565"
-    },
-    {
-        "video_id": "JRfuAukYTKg",
-        "like_count": "8812476",
-        "view_count": "1789458440",
-        "comment_count": "301010"
-=======
-        "like_count": "52535892",
-        "view_count": "8327462895",
-        "comment_count": "4228213",
-        "wikipedia_category": [
+        "like_count": "52536162",
+        "view_count": "8327492334",
+        "comment_count": "4228220",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Music_of_Latin_America",
             "https://en.wikipedia.org/wiki/Pop_music"
@@ -311,20 +12,20 @@
     },
     {
         "video_id": "JGwWNGJdvx8",
-        "like_count": "32323031",
-        "view_count": "6149111376",
-        "comment_count": "1146128",
-        "wikipedia_category": [
+        "like_count": "32323262",
+        "view_count": "6149145992",
+        "comment_count": "1146134",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
         ]
     },
     {
         "video_id": "RgKAFK5djSk",
-        "like_count": "42261625",
-        "view_count": "6108684337",
-        "comment_count": "2176991",
-        "wikipedia_category": [
+        "like_count": "42261891",
+        "view_count": "6108722471",
+        "comment_count": "2177000",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Hip_hop_music",
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
@@ -332,10 +33,10 @@
     },
     {
         "video_id": "OPf0YbXqDm0",
-        "like_count": "21086135",
-        "view_count": "5098326699",
-        "comment_count": "605167",
-        "wikipedia_category": [
+        "like_count": "21086245",
+        "view_count": "5098355733",
+        "comment_count": "605169",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Hip_hop_music",
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
@@ -343,40 +44,40 @@
     },
     {
         "video_id": "09R8_2nJtjg",
-        "like_count": "15906845",
-        "view_count": "3972683769",
+        "like_count": "15906914",
+        "view_count": "3972699766",
         "comment_count": "418290",
-        "wikipedia_category": [
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
         ]
     },
     {
         "video_id": "hT_nvWreIhg",
-        "like_count": "17490770",
-        "view_count": "3927249915",
-        "comment_count": "488705",
-        "wikipedia_category": [
+        "like_count": "17490887",
+        "view_count": "3927274419",
+        "comment_count": "488707",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
         ]
     },
     {
         "video_id": "CevxZvSJLk8",
-        "like_count": "16595746",
-        "view_count": "3918575077",
-        "comment_count": "774321",
-        "wikipedia_category": [
+        "like_count": "16595835",
+        "view_count": "3918595166",
+        "comment_count": "774322",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
         ]
     },
     {
         "video_id": "pRpeEdMmmQ0",
-        "like_count": "21936094",
-        "view_count": "3795505444",
-        "comment_count": "1314223",
-        "wikipedia_category": [
+        "like_count": "21936257",
+        "view_count": "3795537930",
+        "comment_count": "1314228",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Music_of_Latin_America",
             "https://en.wikipedia.org/wiki/Pop_music"
@@ -384,10 +85,10 @@
     },
     {
         "video_id": "fRh_vgS2dFE",
-        "like_count": "16306588",
-        "view_count": "3741530199",
+        "like_count": "16306665",
+        "view_count": "3741546686",
         "comment_count": "868546",
-        "wikipedia_category": [
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Electronic_music",
             "https://en.wikipedia.org/wiki/Hip_hop_music",
             "https://en.wikipedia.org/wiki/Music",
@@ -396,20 +97,20 @@
     },
     {
         "video_id": "lp-EO5I60KA",
-        "like_count": "14912646",
-        "view_count": "3699970328",
-        "comment_count": "372170",
-        "wikipedia_category": [
+        "like_count": "14912729",
+        "view_count": "3699990058",
+        "comment_count": "372173",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
         ]
     },
     {
         "video_id": "0KSOMA3QBU0",
-        "like_count": "17283782",
-        "view_count": "3635570667",
-        "comment_count": "801348",
-        "wikipedia_category": [
+        "like_count": "17283911",
+        "view_count": "3635593444",
+        "comment_count": "801354",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Hip_hop_music",
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
@@ -417,20 +118,20 @@
     },
     {
         "video_id": "2Vv-BfVoq4g",
-        "like_count": "20501032",
-        "view_count": "3611552785",
-        "comment_count": "508467",
-        "wikipedia_category": [
+        "like_count": "20501280",
+        "view_count": "3611590626",
+        "comment_count": "508472",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
         ]
     },
     {
         "video_id": "60ItHLz5WEA",
-        "like_count": "27564943",
-        "view_count": "3555467842",
-        "comment_count": "1264802",
-        "wikipedia_category": [
+        "like_count": "27565109",
+        "view_count": "3555485452",
+        "comment_count": "1264806",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Electronic_music",
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
@@ -438,20 +139,20 @@
     },
     {
         "video_id": "aJOTlE1K90k",
-        "like_count": "21431594",
-        "view_count": "3527234990",
+        "like_count": "21431652",
+        "view_count": "3527253515",
         "comment_count": "662057",
-        "wikipedia_category": [
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
         ]
     },
     {
         "video_id": "YqeW9_5kURI",
-        "like_count": "16948142",
-        "view_count": "3507094863",
+        "like_count": "16948255",
+        "view_count": "3507117255",
         "comment_count": "454041",
-        "wikipedia_category": [
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Electronic_music",
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Music_of_Asia",
@@ -460,30 +161,30 @@
     },
     {
         "video_id": "nfWlot6h_JM",
-        "like_count": "13070635",
-        "view_count": "3373053847",
-        "comment_count": "574304",
-        "wikipedia_category": [
+        "like_count": "13070743",
+        "view_count": "3373068455",
+        "comment_count": "574306",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
         ]
     },
     {
         "video_id": "e-ORhEE9VVg",
-        "like_count": "15193429",
-        "view_count": "3319491781",
+        "like_count": "15193581",
+        "view_count": "3319521187",
         "comment_count": "641033",
-        "wikipedia_category": [
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
         ]
     },
     {
         "video_id": "YQHsXMglC9A",
-        "like_count": "18651590",
-        "view_count": "3110825953",
-        "comment_count": "945047",
-        "wikipedia_category": [
+        "like_count": "18651628",
+        "view_count": "3110832820",
+        "comment_count": "945050",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Christian_music",
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music",
@@ -492,10 +193,10 @@
     },
     {
         "video_id": "3AtDnEC4zak",
-        "like_count": "14260790",
-        "view_count": "3089664124",
-        "comment_count": "404567",
-        "wikipedia_category": [
+        "like_count": "14260904",
+        "view_count": "3089684660",
+        "comment_count": "404569",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Electronic_music",
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
@@ -503,30 +204,30 @@
     },
     {
         "video_id": "kffacxfA7G4",
-        "like_count": "24508975",
-        "view_count": "3059117587",
-        "comment_count": "4820340",
-        "wikipedia_category": [
+        "like_count": "24509192",
+        "view_count": "3059139352",
+        "comment_count": "4820343",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
         ]
     },
     {
         "video_id": "k2qgadSvNyU",
-        "like_count": "17331465",
-        "view_count": "2973082691",
-        "comment_count": "377005",
-        "wikipedia_category": [
+        "like_count": "17331574",
+        "view_count": "2973100408",
+        "comment_count": "377009",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
         ]
     },
     {
         "video_id": "papuvlVeZg8",
-        "like_count": "13829520",
-        "view_count": "2873510492",
-        "comment_count": "303878",
-        "wikipedia_category": [
+        "like_count": "13829620",
+        "view_count": "2873527992",
+        "comment_count": "303879",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Electronic_music",
             "https://en.wikipedia.org/wiki/Hip_hop_music",
             "https://en.wikipedia.org/wiki/Music",
@@ -535,10 +236,10 @@
     },
     {
         "video_id": "pXRviuL6vMY",
-        "like_count": "18887770",
-        "view_count": "2784671287",
-        "comment_count": "628018",
-        "wikipedia_category": [
+        "like_count": "18887878",
+        "view_count": "2784689371",
+        "comment_count": "628017",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Hip_hop_music",
             "https://en.wikipedia.org/wiki/Independent_music",
             "https://en.wikipedia.org/wiki/Music",
@@ -547,31 +248,42 @@
         ]
     },
     {
+        "video_id": "5GL9JoH4Sws",
+        "like_count": "12327301",
+        "view_count": "2783951946",
+        "comment_count": "473791",
+        "wikipedia_categories": [
+            "https://en.wikipedia.org/wiki/Hip_hop_music",
+            "https://en.wikipedia.org/wiki/Music",
+            "https://en.wikipedia.org/wiki/Pop_music"
+        ]
+    },
+    {
         "video_id": "fLexgOxsZu0",
-        "like_count": "14474517",
-        "view_count": "2671556243",
+        "like_count": "14474619",
+        "view_count": "2671577330",
         "comment_count": "537193",
-        "wikipedia_category": [
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
         ]
     },
     {
         "video_id": "2vjPBrBU-TM",
-        "like_count": "12906842",
-        "view_count": "2658317604",
-        "comment_count": "583399",
-        "wikipedia_category": [
+        "like_count": "12906919",
+        "view_count": "2658327736",
+        "comment_count": "583400",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
         ]
     },
     {
         "video_id": "7wtfhZwyrcc",
-        "like_count": "21480266",
-        "view_count": "2556398439",
-        "comment_count": "626760",
-        "wikipedia_category": [
+        "like_count": "21480402",
+        "view_count": "2556420448",
+        "comment_count": "626766",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Independent_music",
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music",
@@ -580,10 +292,10 @@
     },
     {
         "video_id": "PIh2xe4jnpk",
-        "like_count": "11636668",
-        "view_count": "2437290702",
+        "like_count": "11636728",
+        "view_count": "2437303865",
         "comment_count": "252301",
-        "wikipedia_category": [
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music",
             "https://en.wikipedia.org/wiki/Rock_music"
@@ -591,30 +303,30 @@
     },
     {
         "video_id": "rYEDA3JcQqw",
-        "like_count": "12686499",
-        "view_count": "2400220205",
+        "like_count": "12686619",
+        "view_count": "2400253721",
         "comment_count": "423010",
-        "wikipedia_category": [
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
         ]
     },
     {
         "video_id": "rtOvBOTyX00",
-        "like_count": "14683135",
-        "view_count": "2368899460",
-        "comment_count": "497583",
-        "wikipedia_category": [
+        "like_count": "14683247",
+        "view_count": "2368916203",
+        "comment_count": "497550",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
         ]
     },
     {
         "video_id": "34Na4j8AVgA",
-        "like_count": "11586737",
-        "view_count": "2348235282",
-        "comment_count": "397406",
-        "wikipedia_category": [
+        "like_count": "11586868",
+        "view_count": "2348253822",
+        "comment_count": "397405",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Hip_hop_music",
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
@@ -622,20 +334,20 @@
     },
     {
         "video_id": "lWA2pjMjpBs",
-        "like_count": "11092192",
-        "view_count": "2266919126",
-        "comment_count": "405825",
-        "wikipedia_category": [
+        "like_count": "11092304",
+        "view_count": "2266937673",
+        "comment_count": "405827",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
         ]
     },
     {
         "video_id": "YBHQbu5rbdQ",
-        "like_count": "11712138",
-        "view_count": "2231379946",
+        "like_count": "11712202",
+        "view_count": "2231388248",
         "comment_count": "338219",
-        "wikipedia_category": [
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Hip_hop_music",
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Music_of_Asia",
@@ -644,10 +356,10 @@
     },
     {
         "video_id": "PMivT7MJ41M",
-        "like_count": "13198229",
-        "view_count": "2228548508",
-        "comment_count": "385468",
-        "wikipedia_category": [
+        "like_count": "13198328",
+        "view_count": "2228565671",
+        "comment_count": "385470",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Hip_hop_music",
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music",
@@ -656,20 +368,20 @@
     },
     {
         "video_id": "8UVNT4wvIGY",
-        "like_count": "15528826",
-        "view_count": "2193498750",
+        "like_count": "15528926",
+        "view_count": "2193510629",
         "comment_count": "810226",
-        "wikipedia_category": [
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
         ]
     },
     {
         "video_id": "IHNzOHi8sJs",
-        "like_count": "23565097",
-        "view_count": "2147887110",
-        "comment_count": "3274613",
-        "wikipedia_category": [
+        "like_count": "23565230",
+        "view_count": "2147901762",
+        "comment_count": "3274615",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Electronic_music",
             "https://en.wikipedia.org/wiki/Hip_hop_music",
             "https://en.wikipedia.org/wiki/Music",
@@ -679,30 +391,30 @@
     },
     {
         "video_id": "l0U7SxXHkPY",
-        "like_count": "10075793",
-        "view_count": "2144254987",
+        "like_count": "10075828",
+        "view_count": "2144260723",
         "comment_count": "226587",
-        "wikipedia_category": [
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Hip_hop_music",
             "https://en.wikipedia.org/wiki/Music"
         ]
     },
     {
         "video_id": "hLQl3WQQoQ0",
-        "like_count": "10369572",
-        "view_count": "2118517091",
-        "comment_count": "359664",
-        "wikipedia_category": [
+        "like_count": "10369640",
+        "view_count": "2118537084",
+        "comment_count": "359665",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
         ]
     },
     {
         "video_id": "8SbUC-UaAxE",
-        "like_count": "7365804",
-        "view_count": "2112090831",
+        "like_count": "7365856",
+        "view_count": "2112102063",
         "comment_count": "340376",
-        "wikipedia_category": [
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music",
             "https://en.wikipedia.org/wiki/Rock_music"
@@ -710,20 +422,20 @@
     },
     {
         "video_id": "tt2k8PGm-TI",
-        "like_count": "14822251",
-        "view_count": "2077387868",
-        "comment_count": "407014",
-        "wikipedia_category": [
+        "like_count": "14822330",
+        "view_count": "2077401089",
+        "comment_count": "407018",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
         ]
     },
     {
         "video_id": "q0hyYWKXF0Q",
-        "like_count": "15481389",
-        "view_count": "2074839107",
-        "comment_count": "377394",
-        "wikipedia_category": [
+        "like_count": "15481452",
+        "view_count": "2074851920",
+        "comment_count": "377395",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Independent_music",
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
@@ -731,10 +443,10 @@
     },
     {
         "video_id": "fKopy74weus",
-        "like_count": "12534945",
-        "view_count": "2070390331",
-        "comment_count": "373455",
-        "wikipedia_category": [
+        "like_count": "12535016",
+        "view_count": "2070404622",
+        "comment_count": "373456",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Independent_music",
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
@@ -742,10 +454,10 @@
     },
     {
         "video_id": "YykjpeuMNEk",
-        "like_count": "14559935",
-        "view_count": "1987850444",
-        "comment_count": "396292",
-        "wikipedia_category": [
+        "like_count": "14560091",
+        "view_count": "1987871129",
+        "comment_count": "396293",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Electronic_music",
             "https://en.wikipedia.org/wiki/Independent_music",
             "https://en.wikipedia.org/wiki/Music",
@@ -754,10 +466,10 @@
     },
     {
         "video_id": "2S24-y0Ij3Y",
-        "like_count": "25162699",
-        "view_count": "1901395736",
-        "comment_count": "2480649",
-        "wikipedia_category": [
+        "like_count": "25162833",
+        "view_count": "1901413738",
+        "comment_count": "2480655",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Electronic_music",
             "https://en.wikipedia.org/wiki/Hip_hop_music",
             "https://en.wikipedia.org/wiki/Music",
@@ -767,10 +479,10 @@
     },
     {
         "video_id": "LjhCEhWiKXk",
-        "like_count": "8158427",
-        "view_count": "1898216701",
+        "like_count": "8158522",
+        "view_count": "1898230579",
         "comment_count": "245758",
-        "wikipedia_category": [
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music",
             "https://en.wikipedia.org/wiki/Rhythm_and_blues"
@@ -778,42 +490,42 @@
     },
     {
         "video_id": "YVkUvmDQ3HY",
-        "like_count": "13108875",
-        "view_count": "1811860880",
-        "comment_count": "366822",
-        "wikipedia_category": [
+        "like_count": "13109200",
+        "view_count": "1811894442",
+        "comment_count": "366819",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Hip_hop_music",
             "https://en.wikipedia.org/wiki/Music"
         ]
     },
     {
-        "video_id": "1G4isv_Fylg",
-        "like_count": "9029973",
-        "view_count": "1804982071",
-        "comment_count": "351565",
-        "wikipedia_category": [
-            "https://en.wikipedia.org/wiki/Music",
-            "https://en.wikipedia.org/wiki/Pop_music",
-            "https://en.wikipedia.org/wiki/Rock_music"
-        ]
-    },
-    {
         "video_id": "L3wKzyIN1yk",
-        "like_count": "11867611",
-        "view_count": "1804743335",
-        "comment_count": "244724",
-        "wikipedia_category": [
+        "like_count": "11867727",
+        "view_count": "1804765269",
+        "comment_count": "244723",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Christian_music",
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
         ]
     },
     {
+        "video_id": "1G4isv_Fylg",
+        "like_count": "9030044",
+        "view_count": "1805000671",
+        "comment_count": "351565",
+        "wikipedia_categories": [
+            "https://en.wikipedia.org/wiki/Music",
+            "https://en.wikipedia.org/wiki/Pop_music",
+            "https://en.wikipedia.org/wiki/Rock_music"
+        ]
+    },
+    {
         "video_id": "JRfuAukYTKg",
-        "like_count": "8812510",
-        "view_count": "1789469641",
-        "comment_count": "301010",
-        "wikipedia_category": [
+        "like_count": "8812579",
+        "view_count": "1789487356",
+        "comment_count": "301013",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Electronic_music",
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Pop_music"
@@ -821,24 +533,12 @@
     },
     {
         "video_id": "hTWKbfoikeg",
-        "like_count": "12932647",
-        "view_count": "1768837329",
-        "comment_count": "498858",
-        "wikipedia_category": [
+        "like_count": "12932770",
+        "view_count": "1768854922",
+        "comment_count": "498859",
+        "wikipedia_categories": [
             "https://en.wikipedia.org/wiki/Music",
             "https://en.wikipedia.org/wiki/Rock_music"
         ]
-    },
-    {
-        "video_id": "gdZLi9oWNZg",
-        "like_count": "37006374",
-        "view_count": "1768505874",
-        "comment_count": "15880136",
-        "wikipedia_category": [
-            "https://en.wikipedia.org/wiki/Music",
-            "https://en.wikipedia.org/wiki/Music_of_Asia",
-            "https://en.wikipedia.org/wiki/Pop_music"
-        ]
->>>>>>> b0b068df2e2f607c7fe8a8a6930053d17c811f8f
     }
 ]
