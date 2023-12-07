@@ -56,6 +56,13 @@
         "description": "Watch the official music video for \"Waka Waka (This Time for Africa) [The Official 2010 FIFA World Cup (TM) Song]\" by Shakira ..."
     },
     {
+        "video_id": "fRh_vgS2dFE",
+        "title": "Justin Bieber - Sorry (PURPOSE : The Movement)",
+        "channel_id": "UCHkj014U2CQ2Nv0UZeYpE_A",
+        "channel_title": "JustinBieberVEVO",
+        "description": "'Purpose' Available Everywhere Now! iTunes: http://smarturl.it/PurposeDlx?IQid=VEVO1113 Stream & Add To Your Spotify ..."
+    },
+    {
         "video_id": "lp-EO5I60KA",
         "title": "Ed Sheeran - Thinking Out Loud (Official Music Video)",
         "channel_id": "UC0C-w0YjGpqDXGB8IHb662A",
@@ -140,13 +147,6 @@
         "description": "The official music video for Dua Lipa - New Rules Taken from her self-titled debut studio album released in 2017, which featured ..."
     },
     {
-        "video_id": "6Mgqbai3fKo",
-        "title": "Shakira - Chantaje (Official Video) ft. Maluma",
-        "channel_id": "UCGnjeahCJW1AF34HBmQTJ-Q",
-        "channel_title": "shakiraVEVO",
-        "description": "Shakira feat. Maluma - \"Chantaje\" (Official Music Video) Taken from Shakira's hit album El Dorado, out now! Listen / download at ..."
-    },
-    {
         "video_id": "papuvlVeZg8",
         "title": "Clean Bandit - Rockabye (feat. Sean Paul &amp; Anne-Marie) [Official Video]",
         "channel_id": "UCvhQPdeTHzIRneScV8MIocg",
@@ -159,13 +159,6 @@
         "channel_id": "UClVrJwcIy7saPcGc1nct80A",
         "channel_title": "Fueled By Ramen",
         "description": "twenty one pilots' music video for 'Stressed Out' from the album, Blurryface - available now on Fueled By Ramen. Vessel 10th ..."
-    },
-    {
-        "video_id": "5GL9JoH4Sws",
-        "title": "Fifth Harmony - Work from Home (Official Video) ft. Ty Dolla $ign",
-        "channel_id": "UC09d82usokACH1z5YeKnfiA",
-        "channel_title": "FifthHarmonyVEVO",
-        "description": "Work from Home\u201d by Fifth Harmony feat. Ty Dolla $ign Listen to Fifth Harmony: https://FifthHarmony.lnk.to/listenYD Watch more ..."
     },
     {
         "video_id": "fLexgOxsZu0",
@@ -215,13 +208,6 @@
         "channel_id": "UCF_fDSgPpBQuh1MsUTgIARQ",
         "channel_title": "TheWeekndVEVO",
         "description": "Starboy ft. Daft Punk (Official Video) Taken from the new album Starboy http://theweeknd.co/StarboyYD Connect with The ..."
-    },
-    {
-        "video_id": "450p7goxZqg",
-        "title": "John Legend - All of Me (Official Video)",
-        "channel_id": "UCNnnwVSI5Ndo2I4Y-LPuuew",
-        "channel_title": "johnlegendVEVO",
-        "description": "Official music video for \u201cAll of Me\u201d by John Legend Listen to John Legend: https://found.ee/JohnLegend_Listen Subscribe to the ..."
     },
     {
         "video_id": "lWA2pjMjpBs",
@@ -348,5 +334,19 @@
         "channel_id": "UC1l7wYrva1qCH-wgqcHaaRg",
         "channel_title": "David Guetta",
         "description": "Subscribe to be notified for new videos: https://davidguetta.lnk.to/YouTube Follow David Guetta: Instagram: ..."
+    },
+    {
+        "video_id": "hTWKbfoikeg",
+        "title": "Nirvana - Smells Like Teen Spirit (Official Music Video)",
+        "channel_id": "UCzGrGrvf9g8CVVzh_LvGf-g",
+        "channel_title": "NirvanaVEVO",
+        "description": "Official Music Video for Smells Like Teen Spirit performed by Nirvana. Nevermind (30th Anniversary Edition) is available now: ..."
+    },
+    {
+        "video_id": "gdZLi9oWNZg",
+        "title": "BTS (\ubc29\ud0c4\uc18c\ub144\ub2e8) &#39;Dynamite&#39; Official MV",
+        "channel_id": "UC3IZKseVpdzPSBaWxBxundA",
+        "channel_title": "HYBE LABELS",
+        "description": "BTS (\ubc29\ud0c4\uc18c\ub144\ub2e8) 'Dynamite' Official MV Credits: Director: Yong Seok Choi (Lumpens) Assistant Director: Jihye Yoon (Lumpens) ..."
     }
 ]

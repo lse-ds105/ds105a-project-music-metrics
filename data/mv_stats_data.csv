@@ -1,51 +1,51 @@
-video_id,like_count,view_count,comment_count
-kJQP7kiw5Fk,52533847,8327127154,4228063
-JGwWNGJdvx8,32320240,6148732491,1146075
-RgKAFK5djSk,42258883,6108185385,2176937
-OPf0YbXqDm0,21085058,5097988038,605147
-09R8_2nJtjg,15906116,3972473469,418271
-hT_nvWreIhg,17489708,3926960087,488655
-CevxZvSJLk8,16594997,3918320627,774303
-pRpeEdMmmQ0,21934549,3795172788,1314183
-fRh_vgS2dFE,16305640,3741329014,868531
-lp-EO5I60KA,14911693,3699733718,372136
-0KSOMA3QBU0,17282713,3635279257,801321
-2Vv-BfVoq4g,20498013,3611097578,508382
-60ItHLz5WEA,27563192,3555228042,1264775
-aJOTlE1K90k,21430988,3527008136,662049
-YqeW9_5kURI,16946999,3506837260,454032
-nfWlot6h_JM,13069455,3372852786,574286
-e-ORhEE9VVg,15191556,3319105724,641000
-YQHsXMglC9A,18651118,3110738508,945037
-3AtDnEC4zak,14259521,3089393831,404528
-kffacxfA7G4,24506833,3058864671,4820255
-k2qgadSvNyU,17330240,2972858140,376986
-papuvlVeZg8,13828651,2873311457,303856
-pXRviuL6vMY,18886572,2784415949,627998
-fLexgOxsZu0,14473206,2671294644,537150
-2vjPBrBU-TM,12906340,2658200323,583384
-7wtfhZwyrcc,21479024,2556153756,626721
-PIh2xe4jnpk,11636081,2437125050,252290
-rYEDA3JcQqw,12685022,2399824954,422982
-rtOvBOTyX00,14681818,2368673507,497533
-34Na4j8AVgA,11585288,2347970484,397366
-lWA2pjMjpBs,11091175,2266721102,405787
-YBHQbu5rbdQ,11711593,2231272959,338253
-PMivT7MJ41M,13197111,2228327967,385455
-8UVNT4wvIGY,15527800,2193321765,810205
-IHNzOHi8sJs,23564140,2147716349,3274583
-l0U7SxXHkPY,10075520,2144173520,226586
-hLQl3WQQoQ0,10368669,2118267584,359639
-tt2k8PGm-TI,14821504,2077217184,406998
-q0hyYWKXF0Q,15480865,2074695569,377385
-fKopy74weus,12534329,2070230460,373440
-YykjpeuMNEk,14558276,1987625129,396263
-2S24-y0Ij3Y,25161481,1901183785,2480598
-LjhCEhWiKXk,8157452,1898024467,245748
-YVkUvmDQ3HY,13105010,1811421815,366752
-1G4isv_Fylg,9029182,1804797362,351547
-L3wKzyIN1yk,11866645,1804514185,244717
-JRfuAukYTKg,8811763,1789284912,300992
-hTWKbfoikeg,12931352,1768602607,498842
-gdZLi9oWNZg,37005167,1768301880,15880229
-NGLxoKOvzu4,9885742,1764600822,253427
+video_id,like_count,view_count,comment_count,wikipedia_category
+kJQP7kiw5Fk,52535892,8327462895,4228213,"['https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Music_of_Latin_America', 'https://en.wikipedia.org/wiki/Pop_music']"
+JGwWNGJdvx8,32323031,6149111376,1146128,"['https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+RgKAFK5djSk,42261625,6108684337,2176991,"['https://en.wikipedia.org/wiki/Hip_hop_music', 'https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+OPf0YbXqDm0,21086135,5098326699,605167,"['https://en.wikipedia.org/wiki/Hip_hop_music', 'https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+09R8_2nJtjg,15906845,3972683769,418290,"['https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+hT_nvWreIhg,17490770,3927249915,488705,"['https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+CevxZvSJLk8,16595746,3918575077,774321,"['https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+pRpeEdMmmQ0,21936094,3795505444,1314223,"['https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Music_of_Latin_America', 'https://en.wikipedia.org/wiki/Pop_music']"
+fRh_vgS2dFE,16306588,3741530199,868546,"['https://en.wikipedia.org/wiki/Electronic_music', 'https://en.wikipedia.org/wiki/Hip_hop_music', 'https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+lp-EO5I60KA,14912646,3699970328,372170,"['https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+0KSOMA3QBU0,17283782,3635570667,801348,"['https://en.wikipedia.org/wiki/Hip_hop_music', 'https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+2Vv-BfVoq4g,20501032,3611552785,508467,"['https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+60ItHLz5WEA,27564943,3555467842,1264802,"['https://en.wikipedia.org/wiki/Electronic_music', 'https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+aJOTlE1K90k,21431594,3527234990,662057,"['https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+YqeW9_5kURI,16948142,3507094863,454041,"['https://en.wikipedia.org/wiki/Electronic_music', 'https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Music_of_Asia', 'https://en.wikipedia.org/wiki/Pop_music']"
+nfWlot6h_JM,13070635,3373053847,574304,"['https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+e-ORhEE9VVg,15193429,3319491781,641033,"['https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+YQHsXMglC9A,18651590,3110825953,945047,"['https://en.wikipedia.org/wiki/Christian_music', 'https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music', 'https://en.wikipedia.org/wiki/Soul_music']"
+3AtDnEC4zak,14260790,3089664124,404567,"['https://en.wikipedia.org/wiki/Electronic_music', 'https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+kffacxfA7G4,24508975,3059117587,4820340,"['https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+k2qgadSvNyU,17331465,2973082691,377005,"['https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+papuvlVeZg8,13829520,2873510492,303878,"['https://en.wikipedia.org/wiki/Electronic_music', 'https://en.wikipedia.org/wiki/Hip_hop_music', 'https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+pXRviuL6vMY,18887770,2784671287,628018,"['https://en.wikipedia.org/wiki/Hip_hop_music', 'https://en.wikipedia.org/wiki/Independent_music', 'https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music', 'https://en.wikipedia.org/wiki/Rock_music']"
+fLexgOxsZu0,14474517,2671556243,537193,"['https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+2vjPBrBU-TM,12906842,2658317604,583399,"['https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+7wtfhZwyrcc,21480266,2556398439,626760,"['https://en.wikipedia.org/wiki/Independent_music', 'https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music', 'https://en.wikipedia.org/wiki/Rock_music']"
+PIh2xe4jnpk,11636668,2437290702,252301,"['https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music', 'https://en.wikipedia.org/wiki/Rock_music']"
+rYEDA3JcQqw,12686499,2400220205,423010,"['https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+rtOvBOTyX00,14683135,2368899460,497583,"['https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+34Na4j8AVgA,11586737,2348235282,397406,"['https://en.wikipedia.org/wiki/Hip_hop_music', 'https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+lWA2pjMjpBs,11092192,2266919126,405825,"['https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+YBHQbu5rbdQ,11712138,2231379946,338219,"['https://en.wikipedia.org/wiki/Hip_hop_music', 'https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Music_of_Asia', 'https://en.wikipedia.org/wiki/Pop_music']"
+PMivT7MJ41M,13198229,2228548508,385468,"['https://en.wikipedia.org/wiki/Hip_hop_music', 'https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music', 'https://en.wikipedia.org/wiki/Rhythm_and_blues']"
+8UVNT4wvIGY,15528826,2193498750,810226,"['https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+IHNzOHi8sJs,23565097,2147887110,3274613,"['https://en.wikipedia.org/wiki/Electronic_music', 'https://en.wikipedia.org/wiki/Hip_hop_music', 'https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Music_of_Asia', 'https://en.wikipedia.org/wiki/Pop_music']"
+l0U7SxXHkPY,10075793,2144254987,226587,"['https://en.wikipedia.org/wiki/Hip_hop_music', 'https://en.wikipedia.org/wiki/Music']"
+hLQl3WQQoQ0,10369572,2118517091,359664,"['https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+8SbUC-UaAxE,7365804,2112090831,340376,"['https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music', 'https://en.wikipedia.org/wiki/Rock_music']"
+tt2k8PGm-TI,14822251,2077387868,407014,"['https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+q0hyYWKXF0Q,15481389,2074839107,377394,"['https://en.wikipedia.org/wiki/Independent_music', 'https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+fKopy74weus,12534945,2070390331,373455,"['https://en.wikipedia.org/wiki/Independent_music', 'https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+YykjpeuMNEk,14559935,1987850444,396292,"['https://en.wikipedia.org/wiki/Electronic_music', 'https://en.wikipedia.org/wiki/Independent_music', 'https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+2S24-y0Ij3Y,25162699,1901395736,2480649,"['https://en.wikipedia.org/wiki/Electronic_music', 'https://en.wikipedia.org/wiki/Hip_hop_music', 'https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Music_of_Asia', 'https://en.wikipedia.org/wiki/Pop_music']"
+LjhCEhWiKXk,8158427,1898216701,245758,"['https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music', 'https://en.wikipedia.org/wiki/Rhythm_and_blues']"
+YVkUvmDQ3HY,13108875,1811860880,366822,"['https://en.wikipedia.org/wiki/Hip_hop_music', 'https://en.wikipedia.org/wiki/Music']"
+1G4isv_Fylg,9029973,1804982071,351565,"['https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music', 'https://en.wikipedia.org/wiki/Rock_music']"
+L3wKzyIN1yk,11867611,1804743335,244724,"['https://en.wikipedia.org/wiki/Christian_music', 'https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+JRfuAukYTKg,8812510,1789469641,301010,"['https://en.wikipedia.org/wiki/Electronic_music', 'https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Pop_music']"
+hTWKbfoikeg,12932647,1768837329,498858,"['https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Rock_music']"
+gdZLi9oWNZg,37006374,1768505874,15880136,"['https://en.wikipedia.org/wiki/Music', 'https://en.wikipedia.org/wiki/Music_of_Asia', 'https://en.wikipedia.org/wiki/Pop_music']"
