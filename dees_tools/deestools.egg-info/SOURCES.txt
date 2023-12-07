@@ -1,7 +1,0 @@
-custom_functions.py
-pyproject.toml
-deestools.egg-info/PKG-INFO
-deestools.egg-info/SOURCES.txt
-deestools.egg-info/dependency_links.txt
-deestools.egg-info/requires.txt
-deestools.egg-info/top_level.txt
