@@ -2,44 +2,94 @@ from googleapiclient.discovery import build
 import pandas as pd
 import numpy as np
 
-def youtube_search(any_youtube, max_results:int, query:str, region:str, searchtype:str, category:int):
+# def youtube_search(any_youtube, max_results:int, query:str, region:str, searchtype:str, category:int):
+#     search_data = []
+#     video_ids = []
+    
+#     youtube_search_request = any_youtube.search().list(
+#         part="snippet",
+#         maxResults= max_results,
+#         q= query,
+#         regionCode= region,
+#         type=searchtype,
+#         videoCategoryId=category,
+#         order = "viewCount",
+#         fields="items(id/videoId,snippet(channelId,channelTitle,description,title)),nextPageToken,pageInfo,prevPageToken,regionCode"
+#     )
+    
+#     # Execute the request and get the response
+#     youtube_search_response = youtube_search_request.execute()
+    
+#     # iterate through each element in the nested dictionary to get the relevant values of each video
+#     for item in youtube_search_response['items']:
+#         video_id = item['id']['videoId']
+#         title = item['snippet']['title']
+#         channel_id = item['snippet']['channelId']
+#         channel_title = item['snippet']['channelTitle']
+#         description = item['snippet']['description']
+        
+#         # append the relevant values to the data dictionary to save as a dataframe
+#         search_data.append({
+#         'video_id': video_id,
+#         'title': title,
+#         'channel_id': channel_id,
+#         'channel_title': channel_title,
+#         'description': description
+#         })
+    
+#         video_ids.append (video_id)
+#         #return two dictionaries because video_id will be used in the second part of the code
+#     return search_data, video_ids
+
+def youtube_search(any_youtube, max_results: int, query: str, region: str, searchtype: str, category: int):
     search_data = []
     video_ids = []
-    
-    youtube_search_request = any_youtube.search().list(
-        part="snippet",
-        maxResults= max_results,
-        q= query,
-        regionCode= region,
-        type=searchtype,
-        videoCategoryId=category,
-        order = "viewCount",
-        fields="items(id/videoId,snippet(channelId,channelTitle,description,title)),nextPageToken,pageInfo,prevPageToken,regionCode"
-    )
-    
-    # Execute the request and get the response
-    youtube_search_response = youtube_search_request.execute()
-    
-    # iterate through each element in the nested dictionary to get the relevant values of each video
-    for item in youtube_search_response['items']:
-        video_id = item['id']['videoId']
-        title = item['snippet']['title']
-        channel_id = item['snippet']['channelId']
-        channel_title = item['snippet']['channelTitle']
-        description = item['snippet']['description']
-        
-        # append the relevant values to the data dictionary to save as a dataframe
-        search_data.append({
-        'video_id': video_id,
-        'title': title,
-        'channel_id': channel_id,
-        'channel_title': channel_title,
-        'description': description
-        })
-    
-        video_ids.append (video_id)
-        #return two dictionaries because video_id will be used in the second part of the code
+
+    next_page_token = None
+
+    while True:
+        youtube_search_request = any_youtube.search().list(
+            part="snippet",
+            maxResults=min(50, max_results),  # Maximum allowed value is 50
+            q=query,
+            regionCode=region,
+            type=searchtype,
+            videoCategoryId=category,
+            order="viewCount",
+            fields="items(id/videoId,snippet(channelId,channelTitle,description,title)),nextPageToken,pageInfo,prevPageToken,regionCode",
+            pageToken=next_page_token
+        )
+
+        # Execute the request and get the response
+        youtube_search_response = youtube_search_request.execute()
+
+        # iterate through each element in the nested dictionary to get the relevant values of each video
+        for item in youtube_search_response.get('items', []):
+            video_id = item['id']['videoId']
+            title = item['snippet']['title']
+            channel_id = item['snippet']['channelId']
+            channel_title = item['snippet']['channelTitle']
+            description = item['snippet']['description']
+
+            # append the relevant values to the data dictionary to save as a dataframe
+            search_data.append({
+                'video_id': video_id,
+                'title': title,
+                'channel_id': channel_id,
+                'channel_title': channel_title,
+                'description': description
+            })
+
+            video_ids.append(video_id)
+
+        # Check if there are more pages
+        next_page_token = youtube_search_response.get('nextPageToken')
+        if not next_page_token or len(video_ids) >= max_results:
+            break  # No more pages or reached the desired number of results
+
+    # Return the collected data and video IDs
     return search_data, video_ids
+
 
 def get_stats(any_youtube, videoId:list):
 
