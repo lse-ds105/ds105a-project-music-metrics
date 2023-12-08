@@ -93,7 +93,9 @@ def youtube_search(any_youtube, max_results: int, query: str, region: str, searc
 
 def get_stats(any_youtube, videoId:list):
 
+    video_ids_str = ','.join(videoId)
     video_data=[]
+    
     # create the request object
     # from the above response, we already have the channelId, channelTitle, videoID, categoryID, 
     video_request = any_youtube.videos().list(
@@ -119,6 +121,7 @@ def get_stats(any_youtube, videoId:list):
         })
         
     return video_data
+
 
 def get_channel_stats(youtube, channel_ids):
     """
