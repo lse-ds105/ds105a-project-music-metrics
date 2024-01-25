@@ -2,6 +2,26 @@
 
 # DS105 Final Project
 
-## Group name: DeeSnuts
+# What makes good music?
 
-### Aim:
+## Breakdown of our tools
+
+# Our sources of data
+
+## YouTube API
+
+## Genius
+
+# Breakdown of approach
+
+| Problem        | Solution           | Tool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+# Visualisation
+
+
+
+
