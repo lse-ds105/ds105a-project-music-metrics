@@ -19,7 +19,13 @@ Before we present our methodology, we will first present the tools (a surgeon ne
 
 # Our sources of data :open_file_folder:
 
-There were multiple options for 
+There were a few options for us to source for data, the most popular ones being YouTube API, Spotify API and Genius. After some trial and error, we have concluded:
+
+| Scope        | YouTube           | Spotify  | Genius |
+| -------------|:-------------:| -----:|-----:|
+| Type |  |  | |
+| Relevance |       | | |
+| Technicality |       |    | |
 
 ## YouTube API
 
