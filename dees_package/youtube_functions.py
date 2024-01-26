@@ -47,7 +47,7 @@ def youtube_search(any_youtube, max_results: int, query: str, region: str, searc
 
     next_page_token = None
 
-    while True:
+    while True :
         youtube_search_request = any_youtube.search().list(
             part="snippet",
             maxResults=min(50, max_results),  # Maximum allowed value is 50
@@ -93,16 +93,22 @@ def youtube_search(any_youtube, max_results: int, query: str, region: str, searc
 
 def get_stats(any_youtube, videoId:list):
 
-    video_ids_str = ','.join(videoId)
-    video_data=[]
-    
+    # video_ids_str = ','.join(videoId) # pre-2024 code, video ID as comma separated strings; but apparently it's ok to just use a list now
+    video_data= []
+
+
     # create the request object
     # from the above response, we already have the channelId, channelTitle, videoID, categoryID, 
-    video_request = any_youtube.videos().list(
-    part = "statistics, id, topicDetails",
-    id = videoId
-    )
-    video_response = video_request.execute()
+    
+        #id = video_ids_str
+    chunk_size = 50
+    for i in range(0, 600, chunk_size):
+        current_chunk = videoId[i:i+chunk_size-1]
+        video_request = any_youtube.videos().list(
+        part="statistics, id, topicDetails",
+        id=current_chunk)
+        print(i,i+chunk_size-1)
+        video_response = video_request.execute()
 
     # iterate through each element in the nested dictionary to get the relevant values
     for item in video_response['items']:
