@@ -2,8 +2,6 @@ import requests
 from scrapy import Selector
 import re
 
-
-
 def generate_song_url(song_artist, song_title):
     '''
     Returns a string of the URL for the Genius page of the song
@@ -28,30 +26,26 @@ def generate_song_url(song_artist, song_title):
 
     return song_url
 
-
-
-def search_genius(query, access_token=credentials['client_access_token']):
+def search_genius(query, access_token):
     '''
     Returns a dictionary of song title, artist and URL
 
         Parameters:
             query (str): The video title scraped from YouTube
+            access_token (str): The Genius API access token
 
         Returns:
-            data_as_dict (dict): Dictionary containing song title, artist and URL
+            data_as_dict (dict): A dictionary containing song title, artist and URL
     '''
+
     base_url = 'https://api.genius.com'
     search_endpoint = '/search'
 
-    # prepare headers with Authorization
-    headers = {
-        'Authorization': f'Bearer {access_token}'
-    }
+    # prepare headers with authorization
+    headers = {'Authorization': f'Bearer {access_token}'}
 
-    # prepare the query parameters
-    params = {
-        'q': query
-    }
+    # prepare the query parameter
+    params = {'q': query}
 
     # make a request to the Genius API
     response = requests.get(base_url + search_endpoint, headers=headers, params=params)
@@ -73,8 +67,6 @@ def search_genius(query, access_token=credentials['client_access_token']):
     
     # return empty strings if no information is found
     return {'Title': '', 'Artist': '', 'URL': ''}
-
-
 
 def scrape_lyrics(session, song_url):
     '''
