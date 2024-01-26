@@ -102,7 +102,7 @@ def get_stats(any_youtube, videoId:list):
     for i in range(0, 600, chunk_size):
         current_chunk = videoId[i:i+chunk_size-1]
         video_request = any_youtube.videos().list(
-        part="statistics, id, topicDetails",
+        part="statistics, id, topicDetails, contentDetails",
         id=",".join(current_chunk))
         print(video_request)
         print(i,i+chunk_size-1)
@@ -115,13 +115,16 @@ def get_stats(any_youtube, videoId:list):
         view_count = item['statistics']['viewCount']
         comment_count = item['statistics']['commentCount']
         wikipedia_category = item['topicDetails']['topicCategories']
+        duration = item['contentDetails']['duration']
+
 
         # append the relevant values to the data dictionary to save as a dataframe
         video_data.append ({
         'video_id': item['id'],
         'view_count': view_count,
         'comment_count': comment_count,
-        'wikipedia_categories': wikipedia_category
+        'wikipedia_categories': wikipedia_category,
+        'duration': duration
         })
         
     return video_data
@@ -252,7 +255,7 @@ def get_video_details(youtube, video_ids):
     
     for i in range(0, len(video_ids), 50):
         request = youtube.videos().list(
-            part="snippet,contentDetails,statistics",
+            part="contentDetails",
             id=','.join(video_ids[i:i+50])
         )
         response = request.execute() 
