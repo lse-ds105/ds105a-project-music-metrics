@@ -22,12 +22,14 @@ Before we present our methodology, we will first present the tools (a surgeon ne
 There were a few options for us to source for data, the most popular ones being YouTube API, Spotify API and Genius. After some trial and error, we have concluded:
 
 | Scope        | YouTube           | Spotify  | Genius |
-| -------------|:-------------:| -----:|-----:|
+| -------------|:-------------| :-----| :-----|
 | **Type** | Mostly video contents, numbers of views or likes are good popularity indicators | A lot of content available, such as artist, song duration, genre etc. | Very useful platform for lyrics of songs |
 | **Relevance** | Most data are not be relevant, except for popularity indicators such as likes or views | A wide range of data available, but API provides limited access | Highly relevant for lyrics scraping |
-| **Technicality** | Most data are available, with high upper bound limit (10,000) | Hard to obtain specific data due to privacy reasons, only content such as genre can be determined |  |
+| **Technicality** | Most data are available, with high upper bound limit (10,000) | Hard to obtain specific data due to privacy reasons, only content such as genre can be determined | Difficult to use API, but easy to obtain lyrics via web scraping instead |
 
-## YouTube API
+Hence, considering the strengths and weaknesses as a whole, we decided to
+
+## YouTube API 
 
 ## Genius
 
