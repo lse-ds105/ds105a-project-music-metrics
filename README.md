@@ -43,6 +43,12 @@ Hence, considering the strengths and weaknesses as a whole, we decided to
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
+# Used functions extensively, codes for illustration :warning:
+
+## Language Cleaning
+
+## 
+
 # Visualisation
 
 
