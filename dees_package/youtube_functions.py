@@ -103,8 +103,8 @@ def get_stats(any_youtube, videoId:list):
         current_chunk = videoId[i:i+chunk_size-1]
         video_request = any_youtube.videos().list(
         part="statistics, id, topicDetails",
-        chart = None,
-        id=current_chunk)
+        id=",".join(current_chunk))
+        print(video_request)
         print(i,i+chunk_size-1)
         video_response = video_request.execute()
 
@@ -112,7 +112,6 @@ def get_stats(any_youtube, videoId:list):
 
     # iterate through each element in the nested dictionary to get the relevant values
     for item in video_response['items']:
-        like_count = item['statistics']['likeCount']
         view_count = item['statistics']['viewCount']
         comment_count = item['statistics']['commentCount']
         wikipedia_category = item['topicDetails']['topicCategories']
@@ -120,7 +119,6 @@ def get_stats(any_youtube, videoId:list):
         # append the relevant values to the data dictionary to save as a dataframe
         video_data.append ({
         'video_id': item['id'],
-        'like_count': like_count,
         'view_count': view_count,
         'comment_count': comment_count,
         'wikipedia_categories': wikipedia_category
@@ -142,24 +140,22 @@ def get_comments_in_videos(youtube, video_ids):
     """
     all_comments = []
     
-    chunk_size = 50
-    for i in range(0, len(video_ids), chunk_size-1):
+    for i in range (0,len(video_ids),1):
         try:   
-            current_chunk =  video_ids[i:i+chunk_size-1]
             request = youtube.commentThreads().list(
                 part="snippet,replies",
-                videoId=current_chunk
+                videoId=video_ids[i]
             )
             response = request.execute()
         
             comments_in_video = [comment['snippet']['topLevelComment']['snippet']['textOriginal'] for comment in response['items'][0:10]]
-            comments_in_video_info = {'video_id':i, 'comments': comments_in_video}
+            comments_in_video_info = {'video_id':video_ids[i], 'comments': comments_in_video}
 
             all_comments.append(comments_in_video_info)
 
         except Exception as e:
             print(f'Could not get comments for video {i}. Error: {e}')
-            continue  # Continue to the next video in case of an error
+        continue # Skip to the next iteration in case of an error
         
     return pd.DataFrame(all_comments)  
 
