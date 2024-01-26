@@ -5,5 +5,3 @@
 ## Group name: DeeSnuts
 
 ### Aim:
-
-To use YouTube and Genius API to carry out data analysis on music videos
