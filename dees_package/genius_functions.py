@@ -30,12 +30,13 @@ def generate_song_url(song_artist, song_title):
 
 
 
-def search_genius(query, access_token=credentials['client_access_token']):
+def search_genius(query, access_token):
     '''
     Returns a dictionary of song title, artist and URL
 
         Parameters:
             query (str): The video title scraped from YouTube
+            access_token (str): The Genius API access token
 
         Returns:
             data_as_dict (dict): Dictionary containing song title, artist and URL
