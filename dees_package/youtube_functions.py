@@ -41,7 +41,7 @@ import numpy as np
 #         #return two dictionaries because video_id will be used in the second part of the code
 #     return search_data, video_ids
 
-def youtube_search(any_youtube, max_results: int, query: str, region: str, searchtype: str, category: int):
+def youtube_search(any_youtube, max_results: int, query: str, searchtype: str, region: str, category: int):
     search_data = []
     video_ids = []
 
@@ -52,8 +52,8 @@ def youtube_search(any_youtube, max_results: int, query: str, region: str, searc
             part="snippet",
             maxResults=min(50, max_results),  # Maximum allowed value is 50
             q=query,
-            regionCode=region,
             type=searchtype,
+            regionCode = region,
             videoCategoryId=category,
             order="viewCount",
             fields="items(id/videoId,snippet(channelId,channelTitle,description,title)),nextPageToken,pageInfo,prevPageToken,regionCode",
@@ -62,6 +62,7 @@ def youtube_search(any_youtube, max_results: int, query: str, region: str, searc
 
         # Execute the request and get the response
         youtube_search_response = youtube_search_request.execute()
+        print(youtube_search_response['pageInfo']['totalResults'])
 
         # iterate through each element in the nested dictionary to get the relevant values of each video
         for item in youtube_search_response.get('items', []):
@@ -69,7 +70,6 @@ def youtube_search(any_youtube, max_results: int, query: str, region: str, searc
             title = item['snippet']['title']
             channel_id = item['snippet']['channelId']
             channel_title = item['snippet']['channelTitle']
-            description = item['snippet']['description']
 
             # append the relevant values to the data dictionary to save as a dataframe
             search_data.append({
@@ -77,7 +77,6 @@ def youtube_search(any_youtube, max_results: int, query: str, region: str, searc
                 'title': title,
                 'channel_id': channel_id,
                 'channel_title': channel_title,
-                'description': description
             })
 
             video_ids.append(video_id)
@@ -99,16 +98,17 @@ def get_stats(any_youtube, videoId:list):
 
     # create the request object
     # from the above response, we already have the channelId, channelTitle, videoID, categoryID, 
-    
-        #id = video_ids_str
     chunk_size = 50
     for i in range(0, 600, chunk_size):
         current_chunk = videoId[i:i+chunk_size-1]
         video_request = any_youtube.videos().list(
         part="statistics, id, topicDetails",
+        chart = None,
         id=current_chunk)
         print(i,i+chunk_size-1)
         video_response = video_request.execute()
+
+        print(video_response['items'])
 
     # iterate through each element in the nested dictionary to get the relevant values
     for item in video_response['items']:
@@ -127,6 +127,41 @@ def get_stats(any_youtube, videoId:list):
         })
         
     return video_data
+
+def get_comments_in_videos(youtube, video_ids):
+    """
+    Get top level comments as text from all videos with given IDs (only the first 10 comments due to quote limit of Youtube API)
+    Params:
+    
+    youtube: the build object from googleapiclient.discovery
+    video_ids: list of video IDs
+    
+    Returns:
+    Dataframe with video IDs and associated top level comment in text.
+    
+    """
+    all_comments = []
+    
+    chunk_size = 50
+    for i in range(0, len(video_ids), chunk_size-1):
+        try:   
+            current_chunk =  video_ids[i:i+chunk_size-1]
+            request = youtube.commentThreads().list(
+                part="snippet,replies",
+                videoId=current_chunk
+            )
+            response = request.execute()
+        
+            comments_in_video = [comment['snippet']['topLevelComment']['snippet']['textOriginal'] for comment in response['items'][0:10]]
+            comments_in_video_info = {'video_id':i, 'comments': comments_in_video}
+
+            all_comments.append(comments_in_video_info)
+
+        except Exception as e:
+            print(f'Could not get comments for video {i}. Error: {e}')
+            continue  # Continue to the next video in case of an error
+        
+    return pd.DataFrame(all_comments)  
 
 
 def get_channel_stats(youtube, channel_ids):
@@ -245,35 +280,4 @@ def get_video_details(youtube, video_ids):
             
     return pd.DataFrame(all_video_info)
 
-def get_comments_in_videos(youtube, video_ids):
-    """
-    Get top level comments as text from all videos with given IDs (only the first 10 comments due to quote limit of Youtube API)
-    Params:
-    
-    youtube: the build object from googleapiclient.discovery
-    video_ids: list of video IDs
-    
-    Returns:
-    Dataframe with video IDs and associated top level comment in text.
-    
-    """
-    all_comments = []
-    
-    for video_id in video_ids:
-        try:   
-            request = youtube.commentThreads().list(
-                part="snippet,replies",
-                videoId=video_id
-            )
-            response = request.execute()
-        
-            comments_in_video = [comment['snippet']['topLevelComment']['snippet']['textOriginal'] for comment in response['items'][0:10]]
-            comments_in_video_info = {'video_id': video_id, 'comments': comments_in_video}
 
-            all_comments.append(comments_in_video_info)
-            
-        except: 
-            # When error occurs - most likely because comments are disabled on a video
-            print('Could not get comments for video ' + video_id)
-        
-    return pd.DataFrame(all_comments)  
