@@ -2,9 +2,18 @@
 
 # DS105 Final Project
 
+*insert snippet of most popular music video
+
 # What makes good music? :notes:
 
 What makes good music? One's taste of music is a rather subjective matter: one's favourite music could very well be another's most hated song. It seems that music could be one of the worst topics for newbie data scientists to choose. But... we want to challenge ourselves, and see that if even something as abstract as music can be quantified using the prowess of knowledge in DS105. While music is an art, it can also be a science. While it will be naive for us to assume that music taste can be "solved", we believe that we can at least find some insights into the world of music, by simply applying basic data science principles. Let's dive in!
+
+# Our Findings 
+
+[1 graph summarising the most insightful findings]
+explanation
+summary
+
 
 # Breakdown of our tools :nut_and_bolt:
 
@@ -15,7 +24,10 @@ Before we present our methodology, we will first present the tools (a surgeon ne
   ```python
   from dees_package.genius_functions import *
   ```
-* Images folder: where we keep our images used for this website
+* Images folder: where we keep our images used for this website\
+
+[insert screenshots of functions]
+explain how we used package folders to streamline our code
 
 # Our sources of data :open_file_folder:
 
@@ -45,12 +57,26 @@ Hence, considering the strengths and weaknesses as a whole, we decided to
 
 # Used functions extensively, codes for illustration :warning:
 
-## Language Cleaning
+## Data Cleaning
 
-## 
+overall breakdown
+show examples
+
+## Data Wrangling
+
+overall breakdown
+show examples
 
 # Visualisation
 
+Show all graphs and explain each graph
 
+
+
+
+# Acknowledgement of AI use
+
+We used ChatGPT to help with creating some of our code:
+for eg: 
 
 
