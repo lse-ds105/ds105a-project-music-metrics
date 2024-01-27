@@ -52,6 +52,7 @@ def youtube_search(any_youtube, max_results: int, query: str, searchtype: str, r
     # Return the collected data and video IDs
     return search_data, video_ids
 
+
 def get_stats(any_youtube, videoId:list):
 
     # video_ids_str = ','.join(videoId) # pre-2024 code, video ID as comma separated strings; but apparently it's ok to just use a list now
@@ -61,33 +62,36 @@ def get_stats(any_youtube, videoId:list):
     # create the request object
     # from the above response, we already have the channelId, channelTitle, videoID, categoryID, 
     chunk_size = 50
-    for i in range(0, 600, chunk_size):
+    for i in range(0, len(videoId), chunk_size):
         current_chunk = videoId[i:i+chunk_size-1]
         video_request = any_youtube.videos().list(
         part="statistics, id, topicDetails, contentDetails",
         id=",".join(current_chunk))
-        print(video_request)
-        print(i,i+chunk_size-1)
+
         video_response = video_request.execute()
 
-        print(video_response['items'])
+        print(len(video_response['items']))
+        pprint(video_response['items'])
 
     # iterate through each element in the nested dictionary to get the relevant values
-    for item in video_response['items']:
-        view_count = item['statistics']['viewCount']
-        comment_count = item['statistics']['commentCount']
-        wikipedia_category = item['topicDetails']['topicCategories']
-        duration = item['contentDetails']['duration']
+        for item in video_response['items']:
+            view_count = item['statistics']['viewCount'] if 'viewCount' in item['statistics'] else None
+            like_count = item['statistics']['likeCount'] if 'likeCount' in item['statistics'] else None 
+            comment_count = item['statistics']['commentCount'] if 'commentCount' in item['statistics'] else None
+            wikipedia_category = item['topicDetails']['topicCategories'] if 'topicCategories' in item['topicDetails'] else None
+            duration = item['contentDetails']['duration']
 
 
-        # append the relevant values to the data dictionary to save as a dataframe
-        video_data.append ({
-        'video_id': item['id'],
-        'view_count': view_count,
-        'comment_count': comment_count,
-        'wikipedia_categories': wikipedia_category,
-        'duration': duration
-        })
+            # append the relevant values to the data dictionary to save as a dataframe
+            video_data.append ({
+            'video_id': item['id'],
+            'view_count': view_count,
+            'like_count': like_count,
+            'comment_count': comment_count,
+            'wikipedia_categories': wikipedia_category,
+            'duration': duration
+            })
+            print(len(video_data))
         
     return video_data
 
@@ -112,8 +116,9 @@ def get_comments_in_videos(youtube, video_ids):
                 videoId=video_ids[i]
             )
             response = request.execute()
-        
-            comments_in_video = [comment['snippet']['topLevelComment']['snippet']['textOriginal'] for comment in response['items'][0:10]]
+            print(response)
+           
+            comments_in_video = [comment['snippet']['topLevelComment']['snippet']['textOriginal'] for comment in response['items'][0:10]] 
             comments_in_video_info = {'video_id':video_ids[i], 'comments': comments_in_video}
 
             all_comments.append(comments_in_video_info)
