@@ -4,7 +4,7 @@ from pprint import pprint
 import pandas as pd
 import json
 
-def youtube_search(any_youtube, max_results: int, query: str, searchtype: str, region: str, category: int):
+def search_youtube(any_youtube, max_results: int, query: str, searchtype: str, region: str, category: int):
     search_data = []
     video_ids = []
 
