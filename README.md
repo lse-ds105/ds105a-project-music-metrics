@@ -42,6 +42,10 @@ There were a few options for us to source for data, the most popular ones being 
 Hence, considering the strengths and weaknesses as a whole, we decided to
 
 ## YouTube API 
+For the Youtube API, we used two methods, namely the .search() and .videos() methods. 
+The .search() method acts just as its name suggests, we are basically inputting "official music video" into the YouTube search engine and getting the video IDs as our output. 
+The two methods are closely linked in our code, as the output of the .search()
+
 
 
 
