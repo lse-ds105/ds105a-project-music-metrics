@@ -10,7 +10,7 @@ The purpose of this project is to try and learn about what makes good music from
 ## Team Members 
 - Rui Jie Soong (soongruijie) 
   - Responsibilities:
-    - 1️⃣ Data scraping and cleaning from Genius
+    - 1️⃣ Data scraping and cleaning from Genius API
     - 2️⃣ GitHub processes
 - Ruikai Liu (ruikai30) 
   - Responsibilities:
@@ -18,5 +18,5 @@ The purpose of this project is to try and learn about what makes good music from
     - 2️⃣ Data scraping from Spotify
 - Hanbin Feng (hanbinfeng)
   - Responsibilities:
-    - 1️⃣ Data scraping and cleaning from Genius 
+    - 1️⃣ Data scraping and cleaning from Youtube API
     - 2️⃣ Merging the data collected
