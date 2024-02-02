@@ -1,12 +1,147 @@
 
-
+This notebook is the final part of our project – visualisation. Using our final dataframe, we are able to visualise data through applications of R and ggplot2.
 ```{r}
 df <- read.csv('./data/visualisation.csv')
 ```
 
-
 ```{r}
 head(df)
+```
+
+```{r}
+library(ggplot2)
+```
+
+# Univariate plots:
+
+```{r}
+ggplot(df, aes(x = markets, y = popularity)) +
+  geom_boxplot()
+```
+
+Insight: songs with many genres tend not to be popular
+
+```{r}
+ggplot(df, aes(x = view_count, y = like_count)) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE, color = "black")
+```
+
+Insight: idk. Obvious that view count like count correlated
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+df$release_date <- as.Date(df$release_date)
+
+ggplot(df, aes(x = release_date, y = popularity, colour = explicitness)) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "lm") +
+  scale_x_date(
+    limits = as.Date(c("2000-01-01", "2024-01-01"))
+  ) +
+  ylim(0, 100)
+```
+
+# Multivariate plots
+```{r}
+ggplot(df, aes(lexical_richness, after_stat(count), fill = markets)) +
+  geom_density(position = "fill")
+```
+
+Insight: songs available in very few markets neither tend to have excessive nor limited vocabulary. Perhaps a sign that these songs are rigid af thats why banned???
+
+```{r}
+ggplot(df, aes(release_date, after_stat(count), fill = explicitness)) +
+  geom_density(position = "fill")
+```
+
+Insight: pre 1990 - assume "explicitness" is not an available category. Noticed two "waves" of rise in explicitness. Peaked at 2001. 9-11 attack??? plane crash then stopped having explicit songs
+
+```{r}
+ggplot(df, aes(lexical_richness, fill = category_number)) +
+  geom_density(position = "stack")
+```
+
+```{r}
+density <- ggplot(df, aes(x = sentiment_compound, y = lexical_richness)) +
+ geom_density_2d() +
+ geom_density_2d_filled(alpha = 0.5) +
+ geom_density_2d(linewidth = 0.25, colour = "black")
+
+ density
+```
+
+Insight: more happy than sad songs in general. Seems like vocabulary richness of happy songs tend to be slightly less than sad ones. What if we further categorise them?
+
+```{r}
+density + facet_wrap(vars(explicitness))
+```
+
+If categorise into explicit or not, non-explicit songs are mostly happy, but explicit ones have a more even spread.
+
+```{r}
+ggplot(df, aes(x = popularity, colour = explicitness, fill = explicitness)) +
+  geom_density(alpha = 0.2)
+```
+
+Insight: explicit songs less popular
+
+```{r}
+ggplot(df, aes(x = popularity, colour = markets, fill = markets)) +
+  geom_density(alpha = 0.2)
+```
+
+Insight: niche market songs tend to be very popular – but has some risks (peaks at low popularity)
+
+```{r}
+ggplot(df, aes(x = like_count, colour = category_number, fill = category_number)) +
+  geom_density(alpha = 0.2)
+```
+
+```{r}
+ggplot(df, aes(x = lexical_richness, y = popularity)) +
+ geom_point() +
+ geom_density_2d() +
+ geom_density_2d_filled(alpha = 0.5) +
+ geom_density_2d(linewidth = 0.25, colour = "black")
+```
+
+```{r}
+ggplot(df, aes(sentiment_compound, fill = markets)) +
+  geom_density(position = "stack")
+```
+
+```{r}
+ggplot(df, aes(x = popularity, y = lexical_richness)) +
+  geom_bin2d()
+  theme_classic()
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
 ```
 
 ```{r}
