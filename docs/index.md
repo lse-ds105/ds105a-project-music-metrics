@@ -4,6 +4,8 @@
 
 
 
+
+
 # What makes good music? :notes:
 
 What makes good music? One's taste of music is a rather subjective matter: one's favourite music could very well be another's most hated song. It seems that music could be one of the worst topics for newbie data scientists to choose. But... we want to challenge ourselves, and see that if even something as abstract as music can be quantified using the prowess of knowledge in DS105. While music is an art, it can also be a science. While it will be naive for us to assume that music taste can be "solved", we believe that we can at least find some insights into the world of music, by simply applying basic data science principles. Let's dive in!
@@ -39,12 +41,16 @@ There were a few options for us to source for data, the most popular ones being 
 | **Relevance** | Most data are not be relevant, except for popularity indicators such as likes or views | A wide range of data available, but API provides limited access | Highly relevant for lyrics scraping |
 | **Technicality** | Most data are available, with high upper bound limit (10,000) | Hard to obtain specific data due to privacy reasons, only content such as genre can be determined | Difficult to use API, but easy to obtain lyrics via web scraping instead |
 
-Hence, considering the strengths and weaknesses as a whole, we decided to
+Hence, considering the strengths and weaknesses as a whole, we decided to use a combination of all 3
 
-## YouTube API 
-For the Youtube API, we used two methods, namely the .search() and .videos() methods. 
-The .search() method acts just as its name suggests, we are basically inputting "official music video" into the YouTube search engine and getting the video IDs as our output. 
-The two methods are closely linked in our code, as the output of the .search()
+## YouTube API 📺
+For the Youtube API, we used three methods, namely the .search(), .videos(), and .commentThreads() methods. 
+
+The .search() method is contained in the search_youtube() function and it acts just as its name suggests, we are basically inputting "official music video" into the YouTube search engine and getting the video IDs as our output. 
+
+The methods are closely linked in our code, as the output of the search_youtube() function is used as the input for the get_stats() function and get_comments_in_videos() function which contains the .videos() and .commentThreads() methods. 
+
+The .videos() method is used to obtain the statistics of the video, such as the number of views, likes, dislikes, comments etc. The .commentThreads() method is used to obtain the top few comments of the video.
 
 
 
