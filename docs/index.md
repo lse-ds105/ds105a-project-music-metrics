@@ -1,6 +1,8 @@
 # DS105 Final Project
 
-*insert snippet of most popular music video
+![Despacito](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTEwejk2cXFuZ28wZjA3Z29tODhpanIxMXFna2k1dzBlcmljM3lxZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l1Etct30M1D6VQUjm/giphy.gif)
+
+
 
 # What makes good music? :notes:
 
