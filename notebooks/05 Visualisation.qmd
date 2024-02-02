@@ -1,0 +1,14 @@
+
+
+```{r}
+df <- read.csv('./data/visualisation.csv')
+```
+
+
+```{r}
+head(df)
+```
+
+```{r}
+
+```
