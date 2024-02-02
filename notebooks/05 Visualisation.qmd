@@ -14,29 +14,60 @@ library(ggplot2)
 ```
 
 ```{r}
-boxplot <- ggplot(df, aes(x = explicitness, y = popularity)) +
+ggplot(df, aes(x = explicitness, y = popularity)) +
   geom_boxplot()
-
-boxplot
 ```
 
 ```{r}
 df$release_date <- as.Date(df$release_date)
 
-line <- ggplot(df, aes(x = release_date, y = lexical_richness, colour = markets)) +
+ggplot(df, aes(x = release_date, y = lexical_richness, colour = markets)) +
   geom_point(alpha = 0.5) +
   geom_smooth(method = "lm") +
   scale_x_date(
     limits = as.Date(c("2000-01-01", "2024-01-01"))
   ) +
   ylim(0, 100)
-
-line
 ```
 
 ```{r}
-ggplot(df, aes(release_date, fill = markets)) +
+ggplot(df, aes(release_date, fill = explicitness)) +
   geom_density(position = "stack")
+```
+
+```{r}
+ggplot(df, aes(release_date, after_stat(count), fill = markets)) +
+  geom_density(position = "fill")
+```
+
+```{r}
+diamonds
+```
+
+```{r}
+density <- ggplot(df, aes(x = lexical_richness, y = sentiment_compound)) +
+ geom_point() +
+ geom_density_2d() +
+ geom_density_2d_filled(alpha = 0.5) +
+ geom_density_2d(linewidth = 0.25, colour = "black")
+
+ density
+```
+
+```{r}
+density + facet_wrap(vars(markets))
+```
+
+```{r}
+head(faithful)
+```
+
+```{r}
+
+```
+
+```{r}
+
 ```
 
 ```{r}
