@@ -10,5 +10,47 @@ head(df)
 ```
 
 ```{r}
+library(ggplot2)
+```
+
+```{r}
+boxplot <- ggplot(df, aes(x = explicitness, y = popularity)) +
+  geom_boxplot()
+
+boxplot
+```
+
+```{r}
+df$release_date <- as.Date(df$release_date)
+
+line <- ggplot(df, aes(x = release_date, y = lexical_richness, colour = markets)) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "lm") +
+  scale_x_date(
+    limits = as.Date(c("2000-01-01", "2024-01-01"))
+  ) +
+  ylim(0, 100)
+
+line
+```
+
+```{r}
+ggplot(df, aes(release_date, fill = markets)) +
+  geom_density(position = "stack")
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
 
 ```
