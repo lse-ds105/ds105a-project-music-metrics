@@ -9,14 +9,14 @@ The purpose of this project is to try and learn about what makes good music from
 
 ## Team Members 
 - Rui Jie Soong (soongruijie) 
-  - responsibility:
+  - Responsibilities:
     - 1️⃣ Data scraping and cleaning from Genius
     - 2️⃣ GitHub processes
 - Ruikai Liu (ruikai30) 
-  - responsibility:
+  - Responsibilities:
     - 1️⃣ Data cleaning and visualisation
     - 2️⃣ Data scraping from Spotify
 - Hanbin Feng (hanbinfeng)
-  - responsibility:
+  - Responsibilities:
     - 1️⃣ Data scraping and cleaning from Genius 
     - 2️⃣ Merging the data collected
