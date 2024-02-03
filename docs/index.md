@@ -6,7 +6,7 @@
 
 
 
-# What makes good music? :notes:
+# What makes good music? 🎶
 
 What makes good music? One's taste of music is a rather subjective matter: one's favourite music could very well be another's most hated song. It seems that music could be one of the worst topics for newbie data scientists to choose. But... we want to challenge ourselves, and see that if even something as abstract as music can be quantified using the prowess of knowledge in DS105. While music is an art, it can also be a science. While it will be naive for us to assume that music taste can be "solved", we believe that we can at least find some insights into the world of music, by simply applying basic data science principles. Let's dive in!
 
@@ -17,7 +17,7 @@ explanation
 summary
 
 
-# Breakdown of our tools :nut_and_bolt:
+# Breakdown of our tools 🔩
 
 Before we present our methodology, we will first present the tools (a surgeon needs to lay down the tools before commencing the operation). Our repository will consist of several parts, namely:
 * Data folder: this include raw data for testing, and saved data
@@ -78,7 +78,8 @@ overall breakdown
 show examples
 
 
-# Data Expansion :purple_heart:
+# Data Expansion 💜
+
 
 
 # Visualisation 💙
