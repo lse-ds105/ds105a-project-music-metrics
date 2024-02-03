@@ -55,7 +55,15 @@ The .videos() method is used to obtain the statistics of the video, such as the 
 
 
 
-## Genius
+## Genius 🟢
+
+We used the Genius API and webscraping to scrape data on the Title, Artist and Lyrics of each song.
+
+Beginning with the Video Title of the most popular music videos on YouTube, we first cleaned the video title to be standardised, such as removing "(Official Music Video)" from each title. We then used the Genius API to query Genius with the video title as the parameter. This allowed us to get the respective Title, Artist and URL of the Genius page for each song.
+
+Since the API does not give us the lyrics of each song directly, we had to fall back on webscraping to get the lyrics. Using the URL of each Genius page, we ran a custom webscraping function to get the lyrics of each song as a single string, while also cleaning it to remove line breaks and section headers (such as [Bridge] or [Verse]). 
+
+This enabled us to end up with cleaned data on the Title, Artist and Lyrics of each song, which we then merged together with the raw data collected from YouTube to form a final dataframe consisting of all the scraped data.
 
 # Breakdown of approach
 
