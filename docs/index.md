@@ -78,11 +78,19 @@ overall breakdown
 show examples
 
 
-# Data Expansion 💜
+# Data Expansion 🟣
+
+Our current dataframe is cleaned and there are several factors that we can analyse already. However, we want to dive in deeper into our analysis and potentially create even more data for even better visualisation later on. Hence, we want to expand our dataframe further by looking at the following aspects.
+
+## Song length 🟣
+
+Most directly, given the lyrics, we are able to find the length of a song and it can be useful data.
+
+## Lexical richness 🟣
 
 
 
-# Visualisation 💙
+# Visualisation 🔵
 
 Show all graphs and explain each graph
 
