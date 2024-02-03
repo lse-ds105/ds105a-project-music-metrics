@@ -77,13 +77,13 @@ show examples
 overall breakdown
 show examples
 
-# Visualisation
-
-Show all graphs and explain each graph
 
 # Data Expansion :purple_heart:
 
 
+# Visualisation 💙
+
+Show all graphs and explain each graph
 
 
 
