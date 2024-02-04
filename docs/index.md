@@ -1,5 +1,7 @@
 # DS105 Final Project – Music Metrics
 
+_What type of music do AI models prefer? Algo-rhythms._
+
 ![Despacito](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTEwejk2cXFuZ28wZjA3Z29tODhpanIxMXFna2k1dzBlcmljM3lxZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l1Etct30M1D6VQUjm/giphy.gif)
 
 
@@ -148,13 +150,13 @@ These are some of the examples where we used ChatGPT:
 | 🔵 | "How to plot contour lines using ggplot2?" | ChatGPT will give an overall guidance, and we will read the actual documentation afterwards |
 | 🔵 | "What are the effective ways to find correlations in a dataframe?"  | One of the answers is "correlation matrix". Then we will proceed to find a YouTube step-by-step tutorial of how to plot this nicely, with explanations |
 
-# Finally... Some reflections 💕
-* First of all, this project may have come to an end for DS105, but it is not the end for us.
-* We have found success in multiple areas – APIs, web-scraping, data manipulation.
-* But we have failed in others – building effective models, machine learning, or providing an *exhaustive* list of insights.
-* Therefore, we have decided that when we upgrade our coding skills, in particular:
+# Finally... Some reflections
+* First of all, this project may have come to an end for DS105, but it is not the end for us. 
+* We have found success in multiple areas – APIs, web-scraping, data manipulation. 😄
+* But we have failed in others – building effective models, machine learning, or providing an *exhaustive* list of insights. 😢
+* Therefore, we have decided that when we upgrade our coding skills, in particular: ❗
 * Learning new languages
 * Learning machine learning
 * Taking higher-level statistics courses (beyond ST109)
-* We are able to come back to this project and build a highly-advanced model that can truly understand music at the next level...
+* We are able to come back to this project and build a highly-advanced model that can truly understand music at the next level... 👀
 * Till next time! 👋
