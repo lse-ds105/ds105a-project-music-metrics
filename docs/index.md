@@ -82,24 +82,13 @@ We then found a very useful `spotipy` package that is available. Using our acces
 
 Our current dataframe is cleaned and there are several factors that we can analyse already. However, we want to dive in deeper into our analysis and potentially create even more data for even better visualisation later on. Hence, we want to expand our dataframe further by looking at the following aspects.
 
-#### Song length 🟣
-
-Most directly, given the lyrics, we are able to find the length of a song and it can be useful data.
-
-#### Lexical richness 🟣
-
-We want to have a sense of the range of vocabulary being used. To measure this quantitatively, we have identified a popular matrix called "lexical richness". In our definition, it is the proportion of unique words used of total words.
-
-#### Sentiment analysis 🟣
-
-We found the package `nltk` particularly useful for sentiment analysis. Given a particular lyric, we are able to determine the level of sadness, happiness, as well as an overall score for the sentiment called "sentiment compound".
-
-#### Market category 🟣
-
-
-#### Genre category 🟣
-
-
+|  **Aspect** | **Explanation**           |
+| :------------- |:-------------|
+| Song length | Most directly, given the lyrics, we are able to find the length of a song and it can be useful data. |
+| Lexical richness | We want to have a sense of the range of vocabulary being used. To measure this quantitatively, we have identified a popular matrix called "lexical richness". In our definition, it is the proportion of unique words used of total words. |
+| Sentiment analysis | We found the package `nltk` particularly useful for sentiment analysis. Given a particular lyric, we are able to determine the level of sadness, happiness, as well as an overall score for the sentiment called "sentiment compound". |
+| Market category |  |
+| Genre category |  |
 
 # Visualisation 🔵
 
