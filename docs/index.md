@@ -144,10 +144,12 @@ These are some of the examples where we used ChatGPT:
 
 |         | Example Prompt           | Rationale  |
 | :------------- |:-------------| :-----|
-|  |  |  |
-|  |  |   |
-|  |  |  |
-|  |  |  |
+| 🔴 |  |  |
+| 🔴 |  |   |
+| 🟡 |  |  |
+| 🟡 |  |   |
+| 🟢 |  |  |
+| 🟢 |  |  |
 | 🟣 | "Brainstorm some ideas of how to analyse lyrics" | We used ChatGPT to brainstorm ideas, and then we crafted our own functions based on some of the ideas |
 | 🟣 | "What are the ways to conduct sentiment analysis?" | ChatGPT will recommend nltk as one of the packages, then we will Google the actual package and read its documentation |
 | 🔵 | "How to plot contour lines using ggplot2?" | ChatGPT will give an overall guidance, and we will read the actual documentation afterwards |
