@@ -90,22 +90,48 @@ show examples
 
 Our current dataframe is cleaned and there are several factors that we can analyse already. However, we want to dive in deeper into our analysis and potentially create even more data for even better visualisation later on. Hence, we want to expand our dataframe further by looking at the following aspects.
 
-## 1. Lyrics 🟣
-
-## 1.1 Song length 🟣
+#### Song length 🟣
 
 Most directly, given the lyrics, we are able to find the length of a song and it can be useful data.
 
-## 1.2 Lexical richness 🟣
+#### Lexical richness 🟣
 
-We want to have a sense of 
+We want to have a sense of the range of vocabulary being used. To measure this quantitatively, we have identified a popular matrix called "lexical richness". In our definition, it is the proportion of unique words used of total words.
+
+#### Sentiment analysis 🟣
+
+We found the package `nltk` particularly useful for sentiment analysis. Given a particular lyric, we are able to determine the level of sadness, happiness, as well as an overall score for the sentiment called "sentiment compound".
+
+#### Market category 🟣
+
+
+#### Genre category 🟣
+
 
 
 # Visualisation 🔵
 
-Show all graphs and explain each graph
+Once we have expanded our dataframe, we are able to have a wider range of data for visualisation purposes. Here is our final dataframe:
+
+Dataframe
+
+We used three different methodologies for data visualisation and analysis, namely:
+* Statistical inference
+* Univariate visualisation
+* Multivariate visualisation
+
+#### Statistical inference 🔵
 
 
+#### Univariate visualisation 🔵
+
+
+#### Multivariate visualisation 🔵
+
+
+# Conclusion 🔥
+* Bullet 1
+* Bullet 2
 
 # Acknowledgement of AI use 🤖
 
@@ -115,6 +141,16 @@ We have relied on ChatGPT on an occasional basis throughout our project. We used
 * Generating ideas
 
 These are some of the examples where we used ChatGPT:
-* 
+
+|         | Example Prompt           | Rationale  |
+| :------------- |:-------------| :-----|
+|  |  |  |
+|  |  |   |
+|  |  |  |
+|  |  |  |
+| 🟣 | "Brainstorm some ideas of how to analyse lyrics" | We used ChatGPT to brainstorm ideas, and then we crafted our own functions based on some of the ideas |
+| 🟣 | "What are the ways to conduct sentiment analysis?" | ChatGPT will recommend nltk as one of the packages, then we will Google the actual package and read its documentation |
+| 🔵 | "How to plot contour lines using ggplot2?" | ChatGPT will give an overall guidance, and we will read the actual documentation afterwards |
+| 🔵 | "What are the effective ways to find correlations in a dataframe?"  | One of the answers is "correlation matrix". Then we will proceed to find a YouTube step-by-step tutorial of how to plot this nicely, with explanations |
 
 
