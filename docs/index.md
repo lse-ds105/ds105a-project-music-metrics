@@ -90,12 +90,15 @@ show examples
 
 Our current dataframe is cleaned and there are several factors that we can analyse already. However, we want to dive in deeper into our analysis and potentially create even more data for even better visualisation later on. Hence, we want to expand our dataframe further by looking at the following aspects.
 
-## Song length 🟣
+## 1. Lyrics 🟣
+
+## 1.1 Song length 🟣
 
 Most directly, given the lyrics, we are able to find the length of a song and it can be useful data.
 
-## Lexical richness 🟣
+## 1.2 Lexical richness 🟣
 
+We want to have a sense of 
 
 
 # Visualisation 🔵
@@ -104,9 +107,14 @@ Show all graphs and explain each graph
 
 
 
-# Acknowledgement of AI use
+# Acknowledgement of AI use 🤖
 
-We used ChatGPT to help with creating some of our code:
-for eg: 
+We have relied on ChatGPT on an occasional basis throughout our project. We used ChatGPT extensively on:
+* Finding the right functions, and then reading official documentation afterwards
+* Debugging
+* Generating ideas
+
+These are some of the examples where we used ChatGPT:
+* 
 
 
