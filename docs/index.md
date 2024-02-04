@@ -16,13 +16,13 @@ What makes good music? One's taste of music is a rather subjective matter: one's
 explanation
 summary
 
-# Procurement Map
+# Procurement Map 🔴🟡🟢🟣🔵
 
 This is the breakdown of our overall approach. We have categorised our approach into different categories and colour-coded them. We have 🔴 for YouTube, 🟡 for Genius, 🟢 for Spotify, 🟣 for data expansion, and 🔵 for visualisation.
 
 'screenshot'
 
-# Breakdown of our tools 🔩
+# Breakdown of our tools 🔴🟡🟢🟣🔵
 
 Before we present our methodology, we will first present the tools (a surgeon needs to lay down the tools before commencing the operation). Our repository will consist of several parts, namely:
 * Data folder: this include raw data for testing, and saved data
@@ -36,7 +36,7 @@ Before we present our methodology, we will first present the tools (a surgeon ne
 [insert screenshots of functions]
 explain how we used package folders to streamline our code
 
-# Our sources of data :open_file_folder:
+# Our sources of data 🔴🟡🟢
 
 There were a few options for us to source for data, the most popular ones being YouTube API, Spotify API and Genius. After some trial and error, we have concluded:
 
