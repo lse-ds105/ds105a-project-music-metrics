@@ -43,7 +43,7 @@ There were a few options for us to source for data, the most popular ones being 
 
 Hence, considering the strengths and weaknesses as a whole, we decided to use a combination of all 3
 
-## YouTube API 📺
+# YouTube API 🔴
 For the Youtube API, we used three methods, namely the .search(), .videos(), and .commentThreads() methods. 
 
 The .search() method is contained in the search_youtube() function and it acts just as its name suggests, we are basically inputting "official music video" into the YouTube search engine and getting the video IDs as our output. 
@@ -55,7 +55,7 @@ The .videos() method is used to obtain the statistics of the video, such as the 
 
 
 
-## Genius 🟢
+# Genius 🟡
 
 We used the Genius API and webscraping to scrape data on the Title, Artist and Lyrics of each song.
 
@@ -64,26 +64,6 @@ Beginning with the Video Title of the most popular music videos on YouTube, we f
 Since the API does not give us the lyrics of each song directly, we had to fall back on webscraping to get the lyrics. Using the URL of each Genius page, we ran a custom webscraping function to get the lyrics of each song as a single string, while also cleaning it to remove line breaks and section headers (such as [Bridge] or [Verse]). 
 
 This enabled us to end up with cleaned data on the Title, Artist and Lyrics of each song, which we then merged together with the raw data collected from YouTube to form a final dataframe consisting of all the scraped data.
-
-# Breakdown of approach
-
-| Problem        | Solution           | Tool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-# Used functions extensively, codes for illustration :warning:
-
-## Data Cleaning
-
-overall breakdown
-show examples
-
-## Data Wrangling
-
-overall breakdown
-show examples
 
 
 # Data Expansion 🟣
