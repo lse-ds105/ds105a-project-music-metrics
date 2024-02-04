@@ -1,4 +1,4 @@
-# DS105 Final Project
+# DS105 Final Project – Music Metrics
 
 ![Despacito](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTEwejk2cXFuZ28wZjA3Z29tODhpanIxMXFna2k1dzBlcmljM3lxZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l1Etct30M1D6VQUjm/giphy.gif)
 
@@ -10,7 +10,7 @@
 
 What makes good music? One's taste of music is a rather subjective matter: one's favourite music could very well be another's most hated song. It seems that music could be one of the worst topics for newbie data scientists to choose. But... we want to challenge ourselves, and see that if even something as abstract as music can be quantified using the prowess of knowledge in DS105. While music is an art, it can also be a science. While it will be naive for us to assume that music taste can be "solved", we believe that we can at least find some insights into the world of music, by simply applying basic data science principles. Let's dive in!
 
-# Our Findings 
+# ⚠️Spoiler alert: a snippet of a final result 😲
 
 [1 graph summarising the most insightful findings]
 explanation
@@ -41,7 +41,7 @@ explain how we used package folders to streamline our code
 There were a few options for us to source for data, the most popular ones being YouTube API, Spotify API and Genius. After some trial and error, we have concluded:
 
 | Scope        | YouTube 🔴          | Spotify 🟢  | Genius 🟡 |
-| -------------|:-------------| :-----| :-----|
+| :-------------|:-------------| :-----| :-----|
 | **Type** | Mostly video contents, numbers of views or likes are good popularity indicators | A lot of content available, such as artist, song duration, genre etc. | Very useful platform for lyrics of songs |
 | **Relevance** | Most data are not be relevant, except for popularity indicators such as likes or views | A wide range of data available, but API provides limited access | Highly relevant for lyrics scraping |
 | **Technicality** | Most data are available, with high upper bound limit (10,000) | Hard to obtain specific data due to privacy reasons, only content such as genre can be determined | Difficult to use API, but easy to obtain lyrics via web scraping instead |
@@ -148,4 +148,8 @@ These are some of the examples where we used ChatGPT:
 | 🔵 | "How to plot contour lines using ggplot2?" | ChatGPT will give an overall guidance, and we will read the actual documentation afterwards |
 | 🔵 | "What are the effective ways to find correlations in a dataframe?"  | One of the answers is "correlation matrix". Then we will proceed to find a YouTube step-by-step tutorial of how to plot this nicely, with explanations |
 
-
+# Finally... Some reflections 💕
+* First of all, this project may have come to an end for DS105, but it is not the end for us.
+* We have found success in multiple areas – APIs, web-scraping, data manipulation.
+* But we have failed in others – building effective models, machine learning, or providing an *exhaustive* list of insights.
+* 
