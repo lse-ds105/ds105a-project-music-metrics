@@ -40,7 +40,7 @@ explain how we used package folders to streamline our code
 
 There were a few options for us to source for data, the most popular ones being YouTube API, Spotify API and Genius. After some trial and error, we have concluded:
 
-| Scope        | YouTube           | Spotify  | Genius |
+| Scope        | YouTube 🔴          | Spotify 🟢  | Genius 🟡 |
 | -------------|:-------------| :-----| :-----|
 | **Type** | Mostly video contents, numbers of views or likes are good popularity indicators | A lot of content available, such as artist, song duration, genre etc. | Very useful platform for lyrics of songs |
 | **Relevance** | Most data are not be relevant, except for popularity indicators such as likes or views | A wide range of data available, but API provides limited access | Highly relevant for lyrics scraping |
