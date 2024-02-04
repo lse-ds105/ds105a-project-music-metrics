@@ -152,4 +152,9 @@ These are some of the examples where we used ChatGPT:
 * First of all, this project may have come to an end for DS105, but it is not the end for us.
 * We have found success in multiple areas – APIs, web-scraping, data manipulation.
 * But we have failed in others – building effective models, machine learning, or providing an *exhaustive* list of insights.
-* 
+* Therefore, we have decided that when we upgrade our coding skills, in particular:
+* Learning new languages
+* Learning machine learning
+* Taking higher-level statistics courses (beyond ST109)
+* We are able to come back to this project and build a highly-advanced model that can truly understand music at the next level...
+* Till next time! 👋
