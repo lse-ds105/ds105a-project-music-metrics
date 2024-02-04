@@ -1,5 +1,12 @@
 import spotipy
-from spotipy.oauth2 import SpotifyClientCredentials
+import json
+
+credentials_file_path = './credentials.json'
+
+with open(credentials_file_path, 'r') as f:
+    credentials = json.load(f)
+
+sp = spotipy.Spotify(auth=credentials['token'])
 
 def get_release_date(song):
     result = sp.search(song)
