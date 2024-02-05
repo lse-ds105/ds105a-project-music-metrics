@@ -1,15 +1,61 @@
+# Set-up
+
+Run these commands in the R terminal
+
+install.packages("tidyverse")
+install.packages("ggplot2")
+
+Install these packages:
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+```
 
 This notebook is the final part of our project – visualisation. Using our final dataframe, we are able to visualise data through applications of R and ggplot2.
+
+Important!!! Ensure the current working directory is in the main DS folder.
+
 ```{r}
-df <- read.csv('./data/visualisation.csv')
+getwd()
+```
+
+```{r}
+df <- read.csv('../data/final_compiled.csv')
 ```
 
 ```{r}
 head(df)
 ```
 
+# Statistical inference
+
 ```{r}
-library(ggplot2)
+selected_columns <- df[, c('like_count','view_count','comment_count', 'sentiment_positive', 'sentiment_neutral', 'sentiment_negative', 'sentiment_compound_absolute', 'lexical_richness', 'song_length', 'popularity')]
+
+corr_df <- cor(selected_columns, use="complete.obs")
+```
+
+```{r}
+corr_df2 <- corr_df %>% 
+  as.data.frame() %>% 
+  rownames_to_column(var = "rowname") %>%  # Convert row names to a column
+  pivot_longer(-rowname, names_to = "column", values_to = "value") %>% 
+  mutate(rounded_value = round(value, 2))  # Round the correlation values
+
+print(corr_df2)
+```
+
+```{r}
+g <- ggplot(data = corr_df2, aes(x = rowname, y = column, fill = value)) +
+  geom_tile() +
+  geom_text(aes(label = rounded_value), fill = "white", size = 3.5) + 
+  scale_fill_distiller(palette = "Spectral") +
+  labs(title = 'Correlation Matrix', x = '', y = '') +
+  theme_classic() +
+  theme(axis.text.x = element_text(angle = 90))
+
+print(g)
 ```
 
 # Univariate plots:
@@ -22,7 +68,7 @@ ggplot(df, aes(x = markets, y = popularity)) +
 Insight: songs with many genres tend not to be popular
 
 ```{r}
-ggplot(df, aes(x = view_count, y = like_count)) +
+ggplot(df, aes(x = view_count, y = like_count, color = genre_level)) +
   geom_point(alpha = 0.5) +
   geom_smooth(method = "lm", se = FALSE, color = "black")
 ```
@@ -50,6 +96,7 @@ ggplot(df, aes(x = release_date, y = popularity, colour = explicitness)) +
 ```
 
 # Multivariate plots
+
 ```{r}
 ggplot(df, aes(lexical_richness, after_stat(count), fill = markets)) +
   geom_density(position = "fill")
@@ -65,7 +112,7 @@ ggplot(df, aes(release_date, after_stat(count), fill = explicitness)) +
 Insight: pre 1990 - assume "explicitness" is not an available category. Noticed two "waves" of rise in explicitness. Peaked at 2001. 9-11 attack??? plane crash then stopped having explicit songs
 
 ```{r}
-ggplot(df, aes(lexical_richness, fill = category_number)) +
+ggplot(df, aes(lexical_richness, fill = genre_level)) +
   geom_density(position = "stack")
 ```
 
@@ -82,6 +129,9 @@ Insight: more happy than sad songs in general. Seems like vocabulary richness of
 
 ```{r}
 density + facet_wrap(vars(explicitness))
+```
+```{r}
+density + facet_wrap(vars(genre_level))
 ```
 
 If categorise into explicit or not, non-explicit songs are mostly happy, but explicit ones have a more even spread.
@@ -101,7 +151,15 @@ ggplot(df, aes(x = popularity, colour = markets, fill = markets)) +
 Insight: niche market songs tend to be very popular – but has some risks (peaks at low popularity)
 
 ```{r}
-ggplot(df, aes(x = like_count, colour = category_number, fill = category_number)) +
+library(ggradar)
+```
+
+```{r}
+
+```
+
+```{r}
+ggplot(df, aes(x = duration_seconds, colour = category_number, fill = category_number)) +
   geom_density(alpha = 0.2)
 ```
 
