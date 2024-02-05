@@ -69,13 +69,18 @@ The .videos() method is used to obtain the statistics of the video, such as the 
 
 ## Data Cleaning
 
-overall breakdown
-show examples
+Example: 
+
+Converting duration of song from minutes and seconds to only seconds \
+```cleaned_df['duration'] = cleaned_df['duration'].apply(lambda x: isodate.parse_duration(x).total_seconds())```
 
 ## Data Wrangling
 
-overall breakdown
-show examples
+Example:
+
+Merging dataframes outputted from different functions \
+```final_youtube_df = pd.merge(merged_df, comments_df, left_on='video_id', right_on='video_id', sort = False)```
+
 
 # Visualisation
 
