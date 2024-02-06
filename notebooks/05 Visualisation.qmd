@@ -31,7 +31,7 @@ head(df)
 # Statistical inference
 
 ```{r}
-selected_columns <- df[, c('like_count','view_count','comment_count', 'sentiment_positive', 'sentiment_neutral', 'sentiment_negative', 'sentiment_compound_absolute', 'lexical_richness', 'song_length', 'popularity')]
+selected_columns <- df[, c('like_count','view_count','comment_count', 'comments_sentiment', 'sentiment_positive', 'sentiment_neutral', 'sentiment_negative', 'sentiment_compound_absolute', 'lexical_richness', 'song_length', 'popularity')]
 
 corr_df <- cor(selected_columns, use="complete.obs")
 ```
@@ -39,11 +39,9 @@ corr_df <- cor(selected_columns, use="complete.obs")
 ```{r}
 corr_df2 <- corr_df %>% 
   as.data.frame() %>% 
-  rownames_to_column(var = "rowname") %>%  # Convert row names to a column
+  rownames_to_column(var = "rowname") %>% 
   pivot_longer(-rowname, names_to = "column", values_to = "value") %>% 
-  mutate(rounded_value = round(value, 2))  # Round the correlation values
-
-print(corr_df2)
+  mutate(rounded_value = round(value, 2))
 ```
 
 ```{r}
@@ -87,7 +85,6 @@ Insight: idk. Obvious that view count like count correlated
 df$release_date <- as.Date(df$release_date)
 
 ggplot(df, aes(x = release_date, y = popularity, colour = explicitness)) +
-  geom_point(alpha = 0.5) +
   geom_smooth(method = "lm") +
   scale_x_date(
     limits = as.Date(c("2000-01-01", "2024-01-01"))
@@ -112,7 +109,7 @@ ggplot(df, aes(release_date, after_stat(count), fill = explicitness)) +
 Insight: pre 1990 - assume "explicitness" is not an available category. Noticed two "waves" of rise in explicitness. Peaked at 2001. 9-11 attack??? plane crash then stopped having explicit songs
 
 ```{r}
-ggplot(df, aes(lexical_richness, fill = genre_level)) +
+ggplot(df, aes(release_date, fill = markets)) +
   geom_density(position = "stack")
 ```
 
@@ -156,30 +153,6 @@ library(ggradar)
 
 ```{r}
 
-```
-
-```{r}
-ggplot(df, aes(x = duration_seconds, colour = category_number, fill = category_number)) +
-  geom_density(alpha = 0.2)
-```
-
-```{r}
-ggplot(df, aes(x = lexical_richness, y = popularity)) +
- geom_point() +
- geom_density_2d() +
- geom_density_2d_filled(alpha = 0.5) +
- geom_density_2d(linewidth = 0.25, colour = "black")
-```
-
-```{r}
-ggplot(df, aes(sentiment_compound, fill = markets)) +
-  geom_density(position = "stack")
-```
-
-```{r}
-ggplot(df, aes(x = popularity, y = lexical_richness)) +
-  geom_bin2d()
-  theme_classic()
 ```
 
 ```{r}
