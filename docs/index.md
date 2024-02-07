@@ -28,7 +28,7 @@ Before we present our methodology, we will first present the tools (a surgeon ne
   ```python
   from functions.youtubes_functions import *
   ```
-* Images folder: where we keep our images used for this website and graphs from our data visualisation\
+* Images folder: where we keep our images used for this website and graphs from our data visualisation
 
 
 # Our sources of data 🔴🟡🟢
@@ -58,11 +58,6 @@ Example:
 
 Using the search function to obtain the video IDs of the most popular music videos in the US: \
 ```youtube_search_data, video_id = search_youtube(service_youtube, 2000, "official music video", "video", "US", 10)```
-<<<<<<< HEAD
-=======
-
->>>>>>> c3cc3ddeea8fc79a096d292eb2a9ffb5d7a7274d
-
 
 
 # Genius 🟡
@@ -189,9 +184,6 @@ It seems that the genre level can affect the nature of a song by quite a bit, so
 
 But what about the sentiment of a song? Note that most songs tend to be extreme in terms of sentiments, hence we limit the x-axis from 0.95 onwards. Here we see a clear distinction of how genre level affects the "sentiment extremity" of a song. Songs belong to lots of genres have a much higher level of extreme sentiments than songs that only below to a few/one genre.
 
-# Conclusion 🔥
-* Moving away from individual insights that we have covered above, we notice that there are no particularly new insights that we were able to derive generally across all the data we have.
-
 # Acknowledgement of AI use 🤖
 
 We have relied on ChatGPT on an occasional basis throughout our project. We used ChatGPT extensively on:
@@ -203,15 +195,7 @@ To provide some specific examples, these are some areas where we used ChatGPT:
 
 |         | Example Prompt           | Rationale  |
 | :------------- |:-------------| :-----|
-<<<<<<< HEAD
 | 🔴 | " Why am I unable to get more than 50 video IDs every time I run my search function? | We used ChatGPT to recommend a solution based on a part of the API documentation that we may have missed |
-| 🟡 |  |  |
-| 🟡 |  |   |
-| 🟢 |  |  |
-| 🟢 |  |  |
-=======
-| 🔴 | "Why am I unable to get more than 50 video IDs every time I run my search function?" | We used ChatGPT to recommend a solution based on a part of the API documentation that we may have missed |
->>>>>>> c3cc3ddeea8fc79a096d292eb2a9ffb5d7a7274d
 | 🟣 | "Brainstorm some ideas of how to analyse lyrics" | We used ChatGPT to brainstorm ideas, and then we crafted our own functions based on some of the ideas |
 | 🟣 | "What are the ways to conduct sentiment analysis?" | ChatGPT will recommend nltk as one of the packages, then we will Google the actual package and read its documentation |
 | 🔵 | "How to plot contour lines using ggplot2?" | ChatGPT will give an overall guidance, and we will read the actual documentation afterwards |
