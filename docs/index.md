@@ -189,6 +189,7 @@ To provide some specific examples, these are some areas where we used ChatGPT:
 # Finally... Some reflections
 
 ### We have quite a bit of weaknesses in this project...
+* 🔴 We made a huge assumption since the start. As we are not going to do data analysis via millions of videos, we searched music videos under "Official Music Video" in YouTube, from US viewers specifically. That may be already a skewed sample to begin with.
 * 🔴 We relied on Wikipedia to provide a song's genre. However, there is a significant lack of such information on Wikipedia, which can fundamentally affect our data's reliability. Our intention was to utilise our W7 Summative skills but in reality it may not be a wise choice.
 * 🟡 Web scraping is not the proper and ideal way to get Genius lyrics. We have to admit that even Genius itself do not advocate web scraping, and for data volume that is high (2000+) we are unsure if our scraper will work. We could have used other methods such as API instead, but it is much harder.
 * 🟢 While we are able to obtain a wide variety of data, we failed to understand the intrinsic reliability of them. For example, spotify gives a popularity score of a song. But what defines popularity? What metrics/regression model does spotify use to determine a song's popularity? We do not know.
