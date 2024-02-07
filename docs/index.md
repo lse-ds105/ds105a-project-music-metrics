@@ -21,17 +21,15 @@ This is the breakdown of our overall approach. We have categorised our approach 
 # Breakdown of our tools 🔴🟡🟢🟣🔵
 
 Before we present our methodology, we will first present the tools (a surgeon needs to lay down the tools before commencing the operation). Our repository will consist of several parts, namely:
-* Data folder: this include raw data for testing, and saved data
-* Notebook folder: this will be mainly for pure coding work
-* "DeeS tools" folder: this folder is where we store all our functions! We found a way to import them directly :smirk:
+* Data folder: this includes raw data for testing, and saved data
+* Notebook folder: this will be mainly for pure coding work, and they should be run in numerical order!
+* Functions folder: this folder is where we store all our functions and then import them into each notebook when needed using the following code:
 
   ```python
-  from dees_package.genius_functions import *
+  from functions.youtubes_functions import *
   ```
-* Images folder: where we keep our images used for this website\
+* Images folder: where we keep our images used for this website and graphs from our data visualisation\
 
-[insert screenshots of functions]
-explain how we used package folders to streamline our code
 
 # Our sources of data 🔴🟡🟢
 
