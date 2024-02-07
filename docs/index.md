@@ -114,6 +114,7 @@ We used three different methodologies for data visualisation and analysis, namel
 
 #### Statistical inference 🔵
 
+[insert diagram 1]
 
 #### Basic visualisation 🔵
 
