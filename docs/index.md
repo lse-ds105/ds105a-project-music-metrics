@@ -45,7 +45,7 @@ There were a few options for us to source for data, the most popular ones being 
 | Scope        | YouTube 🔴          | Spotify 🟢  | Genius 🟡 |
 | :-------------|:-------------| :-----| :-----|
 | **Type** | Mostly video contents, numbers of views or likes are good popularity indicators | A lot of content available, such as artist, song duration, genre etc. | Very useful platform for lyrics of songs |
-| **Relevance** | Most data are not be relevant, except for popularity indicators such as likes or views | A wide range of data available, but API provides limited access | Highly relevant for lyrics scraping |
+| **Relevance** | Most data are not relevant, except for popularity indicators such as likes or views | A wide range of data available, but API provides limited access | Highly relevant for lyrics scraping |
 | **Technicality** | Most data are available, with high upper bound limit (10,000) | Hard to obtain specific data due to privacy reasons, only content such as genre can be determined | Difficult to use API, but easy to obtain lyrics via web scraping instead |
 
 Hence, considering the strengths and weaknesses as a whole, we decided to use a combination of all 3
@@ -59,6 +59,12 @@ The methods are closely linked in our code, as the output of the search_youtube(
 
 The .videos() method is used to obtain the statistics of the video, such as the number of views, likes, dislikes, comments etc. The .commentThreads() method is used to obtain the top few comments of the video.
 
+We are able to obtain a dataframe containing the video ID, title, duration, views, likes, and the top few comments of the video after merging the outputs of both functions.
+
+Example:
+
+Using the search function to obtain the video IDs of the most popular music videos in the US: \
+```youtube_search_data, video_id = search_youtube(service_youtube, 2000, "official music video", "video", "US", 10)```
 
 
 
@@ -72,26 +78,18 @@ Since the API does not give us the lyrics of each song directly, we had to fall 
 
 This enabled us to end up with cleaned data on the Title, Artist and Lyrics of each song, which we then merged together with the raw data collected from YouTube to form a final dataframe consisting of all the scraped data.
 
-<<<<<<< HEAD
 Example: 
 
 Converting duration of song from minutes and seconds to only seconds \
 ```cleaned_df['duration'] = cleaned_df['duration'].apply(lambda x: isodate.parse_duration(x).total_seconds())```
-=======
-# Spotify API 🟢
->>>>>>> 01ddfb67fca5d5c22b38b0a6c67337f3173b33d1
 
 We leverage on the Spotify API to obtain an access token.
 
-<<<<<<< HEAD
 Example:
 
 Merging dataframes outputted from different functions \
 ```final_youtube_df = pd.merge(merged_df, comments_df, left_on='video_id', right_on='video_id', sort = False)```
 
-=======
-We then found a very useful `spotipy` package that is available. Using our access token and the package, we are able to use the `search()` tool to obtain a huge `json` format regarding a particular song. We then used [JSON Crack]([url](https://jsoncrack.com/)) to navigate the output and we are able to find insights such as a song's release date, popularity, explicitness and available markets.
->>>>>>> 01ddfb67fca5d5c22b38b0a6c67337f3173b33d1
 
 # Data Expansion 🟣
 
@@ -148,7 +146,7 @@ To provide some specific examples, these are some areas where we used ChatGPT:
 
 |         | Example Prompt           | Rationale  |
 | :------------- |:-------------| :-----|
-| 🔴 |  |  |
+| 🔴 | " Why am I unable to get more than 50 video IDs every time I run my search function? | We used ChatGPT to recommend a solution based on a part of the API documentation that we may have missed |
 | 🔴 |  |   |
 | 🟡 |  |  |
 | 🟡 |  |   |
