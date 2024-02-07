@@ -119,19 +119,10 @@ We used three different methodologies for data visualisation and analysis, namel
 #### Statistical inference 🔵
 
 
-#### Univariate visualisation 🔵
+#### Basic visualisation 🔵
 
 
-#### Multivariate visualisation 🔵
-
-# Before we conclude... Just some highlights of our skills 🌟
-
-We have conducted extensive data cleaning, data manipulation and data wrangling throughout all our notebooks. However, to highlight a few skillsets that we have used:
-
-#### 'description' 🔴
-```python
-code = code
-```
+#### More complex visualisation 🔵
 
 # Conclusion 🔥
 * Bullet 1
