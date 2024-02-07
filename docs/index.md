@@ -44,13 +44,13 @@ There were a few options for us to source for data. We concluded on using the Yo
 Hence, considering the strengths and weaknesses as a whole, we decided to use a combination of all 3.
 
 # YouTube API 🔴
-For the Youtube API, we used three methods, namely the .search(), .videos(), and .commentThreads() methods. 
+For the Youtube API, we used three methods, namely the ```.search()```, ```.videos()```, and ```.commentThreads()``` methods. 
 
-The .search() method is contained in the search_youtube() function and it acts just as its name suggests, we are basically inputting "official music video" into the YouTube search engine and getting the video IDs as our output. 
+The ```.search()``` method is contained in the ```search_youtube()``` function and it acts just as its name suggests, we are basically inputting "official music video" into the YouTube search engine and getting the video IDs as our output. 
 
-The methods are closely linked in our code, as the output of the search_youtube() function is used as the input for the get_stats() function and get_comments_in_videos() function which contains the .videos() and .commentThreads() methods. 
+The methods are closely linked in our code, as the output of the ```search_youtube()``` function is used as the input for the ```get_stats()``` function and ```get_comments_in_videos()``` function which contains the ```.videos()``` and ```.commentThreads()``` methods. 
 
-The .videos() method is used to obtain the statistics of the video, such as the number of views, likes, dislikes, comments etc. The .commentThreads() method is used to obtain the top few comments of the video.
+The ```.videos()``` method is used to obtain the statistics of the video, such as the number of views, likes, dislikes, comments etc. The ```.commentThreads()``` method is used to obtain the top few comments of the video.
 
 We are able to obtain a dataframe containing the video ID, title, duration, views, likes, and the top few comments of the video after merging the outputs of both functions.
 
@@ -187,8 +187,7 @@ It seems that the genre level can affect the nature of a song by quite a bit, so
 But what about the sentiment of a song? Note that most songs tend to be extreme in terms of sentiments, hence we limit the x-axis from 0.95 onwards. Here we see a clear distinction of how genre level affects the "sentiment extremity" of a song. Songs belong to lots of genres have a much higher level of extreme sentiments than songs that only below to a few/one genre.
 
 # Conclusion 🔥
-* Bullet 1
-* Bullet 2
+* Moving away from individual insights that we have covered above, we notice that there are no particularly new insights that we were able to derive generally across all the data we have.
 
 # Acknowledgement of AI use 🤖
 
