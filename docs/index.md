@@ -11,6 +11,7 @@ What makes good music? One's taste of music is a rather subjective matter: one's
 <details>
   <summary>⚠️Spoiler alert: a snippet of a final result 😲</summary>
 
+
 [1 graph summarising the most insightful findings]
 
 What is this!? Nothing in this graph looks "musical". But it actually shows some relevant insights into the music we listen! Let's dive in to see how we got this graph at the end 😉
@@ -78,6 +79,7 @@ Example:
 Converting duration of song from minutes and seconds to only seconds \
 ```cleaned_df['duration'] = cleaned_df['duration'].apply(lambda x: isodate.parse_duration(x).total_seconds())```
 =======
+
 # Spotify API 🟢
 >>>>>>> 01ddfb67fca5d5c22b38b0a6c67337f3173b33d1
 
@@ -134,11 +136,12 @@ From here, we used our correlation matrix to guide us some ideas for plots. Howe
 
 [diagram]
 
-From plot, it may be surprising that songs that are released in all 184 markets tend to be less popular. It may be a sign that quantity is generally compromised at the expense of quality, and songs that "spread too thin" and go too global may be less popular. In contrary, songs that are targeted at only a few markets seem to have very consistent level of popularity, capturing their niche audience.
+* It may be surprising that songs that are released in all 184 markets tend to be less popular.
+* It may be a sign that quantity is generally compromised at the expense of quality, and songs that "spread too thin" and go too global may be less popular. In contrary, songs that are targeted at only a few markets seem to have very consistent level of popularity, capturing their niche audience.
 
 [diagram]
 
-We know that like count and view count has the highest correlation. But are there any insights if we categorise the data? Here we categorised into the number of genres that the songs are in. However, there seems to have no insights here. (We tried plotting with other categorisations such as "explicitness" and "markets", but the results are similar.)
+We know that like count and view count has the highest correlation. But are there any insights if we categorise the data? Here, we categorised into the number of genres that the songs are in. However, there seems to have no insights here. (We tried plotting with other categorisations such as "explicitness" and "markets", but the results are similar.)
 
 [diagram]
 
