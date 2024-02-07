@@ -7,6 +7,13 @@ The purpose of this project is to try and learn about what makes good music from
 - genius.com 
 - spotify.com
 
+## Directory Overview
+- data: Contains all our raw and processed data, typically as .csv files
+- docs: Contains the markdown file for our webpage
+- functions: Contains python script files containing custom functions we created to run in our notebooks
+- images: Contains images of the various graphs we plotted to visualise our data
+- notebooks: Contains all Jupyter notebooks to reproduce our project. Run them in numerical order.
+
 ## Team Members 
 - Rui Jie Soong (soongruijie) 
   - Responsibilities:
