@@ -63,27 +63,11 @@ Since the API does not give us the lyrics of each song directly, we had to fall 
 
 This enabled us to end up with cleaned data on the Title, Artist and Lyrics of each song, which we then merged together with the raw data collected from YouTube to form a final dataframe consisting of all the scraped data.
 
-<<<<<<< HEAD
-Example: 
-
-Converting duration of song from minutes and seconds to only seconds \
-```cleaned_df['duration'] = cleaned_df['duration'].apply(lambda x: isodate.parse_duration(x).total_seconds())```
-=======
-
 # Spotify API 🟢
->>>>>>> 01ddfb67fca5d5c22b38b0a6c67337f3173b33d1
 
 We leverage on the Spotify API to obtain an access token.
 
-<<<<<<< HEAD
-Example:
-
-Merging dataframes outputted from different functions \
-```final_youtube_df = pd.merge(merged_df, comments_df, left_on='video_id', right_on='video_id', sort = False)```
-
-=======
 We then found a very useful `spotipy` package that is available. Using our access token and the package, we are able to use the `search()` tool to obtain a huge `json` format regarding a particular song. We then used [JSON Crack]([url](https://jsoncrack.com/)) to navigate the output and we are able to find insights such as a song's release date, popularity, explicitness and available markets.
->>>>>>> 01ddfb67fca5d5c22b38b0a6c67337f3173b33d1
 
 # Data Expansion 🟣
 
