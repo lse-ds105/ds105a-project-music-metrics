@@ -8,11 +8,15 @@ _What type of music do AI models prefer? Algo-rhythms._
 
 What makes good music? One's taste of music is a rather subjective matter: one's favourite music could very well be another's most hated song. It seems that music could be one of the worst topics for newbie data scientists to choose. But... we want to challenge ourselves, and see that if even something as abstract as music can be quantified using the prowess of knowledge in DS105. While music is an art, it can also be a science. While it will be naive for us to assume that music taste can be "solved", we believe that we can at least find some insights into the world of music, by simply applying basic data science principles. Let's dive in!
 
-# ⚠️Spoiler alert: a snippet of a final result 😲
+<details>
+  <summary>⚠️Spoiler alert: a snippet of a final result 😲</summary>
 
 [1 graph summarising the most insightful findings]
-explanation
-summary
+
+What is this!? Nothing in this graph looks "musical". But it actually shows some relevant insights into the music we listen! Let's dive in to see how we got this graph at the end 😉
+
+</details>
+
 
 # Procurement Map 🔴🟡🟢🟣🔵
 
@@ -112,14 +116,67 @@ We used three different methodologies for data visualisation and analysis, namel
 * Univariate visualisation
 * Multivariate visualisation
 
-#### Statistical inference 🔵
+#### Statistical visualisation 🔵
+
+We want to plot a general correlation matrix to look for any overall insights that we can find.
 
 [insert diagram 1]
 
+From the matrix, there are a few insights:
+* Not surprisingly, view count, like count and comment count are all highly correlated, with like count and view count having the strongest correlation (0.91).
+* Song length is negatively correlated with lexical richness (-0.36). This is a sign that as songs get longer, artists generally rely on previous verses instead of creating new words/phrases.
+* The sentiment compound of YouTube comments have some correlation with the positive and negative song sentiment (~0.2, an unsurprising fact) but has little correlation with all other factors, confirming our initial hypothesis that it is not relevant (0 correlation with popularity).
+* It could be surprising to some that popularity of a song is negatively correlated with lexical richness. This means that in general, people may prefer repetitive songs and focus less on the creativity of new lyrics.
+
 #### Basic visualisation 🔵
+
+From here, we used our correlation matrix to guide us some ideas for plots. However, our visualisation methodology is very much based on trial and error. We begin with some insights that we can find from basic visualisations:
+
+[diagram]
+
+From plot, it may be surprising that songs that are released in all 184 markets tend to be less popular. It may be a sign that quantity is generally compromised at the expense of quality, and songs that "spread too thin" and go too global may be less popular. In contrary, songs that are targeted at only a few markets seem to have very consistent level of popularity, capturing their niche audience.
+
+[diagram]
+
+We know that like count and view count has the highest correlation. But are there any insights if we categorise the data? Here we categorised into the number of genres that the songs are in. However, there seems to have no insights here. (We tried plotting with other categorisations such as "explicitness" and "markets", but the results are similar.)
+
+[diagram]
+
+What about some potential trends over time? From plot above, we can see that at a reasonable confidence interval (95%), explicit songs have become slightly less popular. This is a sign that people's underlying preference for explicit songs may be gradually shifting over time.
+
 
 
 #### More complex visualisation 🔵
+
+In this section, the visualisations will be more comparative in nature, where we obtain insights by comparing multiple factors.
+
+[diagram]
+
+Here we once again compare the level of explicitness over time. It is reasonable for us to assume that the "explicitness" category was not available prior to ~1990, hence we ignore the first portion of the graph. It is interesting to note that there are two "bull runs" of explicit songs. Around 2000, there could be a possible watershed event (wild guess: 911) which affected the song market so much that artists start to release more non explicit songs.
+
+[diagram]
+
+This graph presents a perspective of how the market availability of songs change over time. The first trend is that there is an exponential increase in number of songs over time, which is not surprising at all. What we found insightful here is that from year 2000 to around 2008, artists tend to release songs that only exist in very few markets. From 2008 onwards, there is a significant trend reversal where most songs are available in global markets. This could be an indicator of the shift in level of globalisation/cultural changes/censorship policies during that period.
+
+[diagram]
+
+Here, we experimented with heat maps instead to understand the sentiment compound of a song further, and see if it has anything to do with the lexical richness. Firstly, we realise that songs tend to be extreme - either happy or sad instead of neutral. Secondly, there seems to be more happy songs than sad ones. However, we want to dive in deeper and see if there are more insights:
+
+[diagram]
+
+When we further break down into level of explicitness - we see a much larger difference. Vast majority of songs that are non-explicit are happy songs. For songs that are explicit, the distinction is less obvious - there is a more even spread of happy and sad songs.
+
+[diagram]
+
+When we break down into genre level, we notice some distinct differences in terms of lexical richness. For songs that belong to multiple genres, happy songs tend to use a wider range of vocabulary than sad ones. Conversely, for simple songs which belong to a single genre, sad songs use a wider range of vocabulary instead.
+
+[diagram]
+
+It seems that the genre level can affect the nature of a song by quite a bit, so we hypothesised that it should affect a song's popularity as well. But does it? Surprisingly, we can see that the distribution is very similar for all songs regardless of whether they belong to a lot of genre or just one. This rejects our hypothesis that it has a significant effect on popularity.
+
+[diagram]
+
+But what about the sentiment of a song? Note that most songs tend to be extreme in terms of sentiments, hence we limit the x-axis from 0.95 onwards. Here we see a clear distinction of how genre level affects the "sentiment extremity" of a song. Songs belong to lots of genres have a much higher level of extreme sentiments than songs that only below to a few/one genre.
 
 # Conclusion 🔥
 * Bullet 1
