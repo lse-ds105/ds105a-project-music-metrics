@@ -179,13 +179,13 @@ print(density_and_genre)
 When we break down into genre level, we notice some distinct differences in terms of lexical richness. For songs that belong to multiple genres, happy songs tend to use a wider range of vocabulary than sad ones. Conversely, for simple songs which belong to a single genre, sad songs use a wider range of vocabulary instead.
 
 ```{r}
-density_and_genre <- ggplot(df, aes(x = popularity, colour = genre_level, fill = genre_level)) +
+density_and_popularity <- ggplot(df, aes(x = popularity, colour = genre_level, fill = genre_level)) +
   geom_density(alpha = 0.2)
 
 # save graph as image file
-ggsave(file.path('../images/', 'density_and_genre.png'), density_and_genre, width = 10, height = 10, units = 'in')
+ggsave(file.path('../images/', 'density_and_popularity.png'), density_and_popularity, width = 10, height = 10, units = 'in')
 
-print(density_and_genre)
+print(density_and_popularity)
 ```
 
 It seems that the genre level can affect the nature of a song by quite a bit, so we hypothesised that it should affect a song's popularity as well. But does it? Surprisingly, we can see that the distribution is very similar for all songs regardless of whether they belong to a lot of genre or just one. This rejects our hypothesis that it has a significant effect on popularity.
