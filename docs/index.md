@@ -20,6 +20,7 @@ Before we present our methodology, we will first present the tools (a surgeon ne
 * Data folder: this include raw data for testing, and saved data
 * Notebook folder: this will be mainly for pure coding work
 * "DeeS tools" folder: this folder is where we store all our functions! We found a way to import them directly :smirk:
+
   ```python
   from dees_package.genius_functions import *
   ```
