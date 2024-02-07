@@ -122,7 +122,8 @@ We used three different methodologies for data visualisation and analysis, namel
 
 We want to plot a general correlation matrix to look for any overall insights that we can find.
 
-[insert diagram 1]
+![Correlation Matrix](../images/correlation_matrix.png)
+
 
 From the matrix, there are a few insights:
 * Not surprisingly, view count, like count and comment count are all highly correlated, with like count and view count having the strongest correlation (0.91).
