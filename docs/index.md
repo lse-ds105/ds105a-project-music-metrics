@@ -3,6 +3,7 @@
 _What type of music do AI models prefer? Algo-rhythms._
 
 ![Despacito](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTEwejk2cXFuZ28wZjA3Z29tODhpanIxMXFna2k1dzBlcmljM3lxZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l1Etct30M1D6VQUjm/giphy.gif)
+*Despacito was the most popular music video in the US - but does that mean it is actually the best?*
 
 # What makes good music? 🎶
 
@@ -12,7 +13,7 @@ What makes good music? One's taste of music is a rather subjective matter: one's
 
 This is the breakdown of our overall approach. We have categorised our approach into different categories and colour-coded them. We have 🔴 for YouTube, 🟡 for Genius, 🟢 for Spotify, 🟣 for data expansion, and 🔵 for visualisation.
 
-![Procurement Map](../images/procurement.png)
+![Procurement Map](../images/procurement_map.png)
 
 # Breakdown of our tools 🔴🟡🟢🟣🔵
 
@@ -187,12 +188,7 @@ To provide some specific examples, these are some areas where we used ChatGPT:
 
 |         | Example Prompt           | Rationale  |
 | :------------- |:-------------| :-----|
-| 🔴 | " Why am I unable to get more than 50 video IDs every time I run my search function? | We used ChatGPT to recommend a solution based on a part of the API documentation that we may have missed |
-| 🔴 |  |   |
-| 🟡 |  |  |
-| 🟡 |  |   |
-| 🟢 |  |  |
-| 🟢 |  |  |
+| 🔴 | "Why am I unable to get more than 50 video IDs every time I run my search function?" | We used ChatGPT to recommend a solution based on a part of the API documentation that we may have missed |
 | 🟣 | "Brainstorm some ideas of how to analyse lyrics" | We used ChatGPT to brainstorm ideas, and then we crafted our own functions based on some of the ideas |
 | 🟣 | "What are the ways to conduct sentiment analysis?" | ChatGPT will recommend nltk as one of the packages, then we will Google the actual package and read its documentation |
 | 🔵 | "How to plot contour lines using ggplot2?" | ChatGPT will give an overall guidance, and we will read the actual documentation afterwards |
