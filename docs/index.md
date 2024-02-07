@@ -8,11 +8,15 @@ _What type of music do AI models prefer? Algo-rhythms._
 
 What makes good music? One's taste of music is a rather subjective matter: one's favourite music could very well be another's most hated song. It seems that music could be one of the worst topics for newbie data scientists to choose. But... we want to challenge ourselves, and see that if even something as abstract as music can be quantified using the prowess of knowledge in DS105. While music is an art, it can also be a science. While it will be naive for us to assume that music taste can be "solved", we believe that we can at least find some insights into the world of music, by simply applying basic data science principles. Let's dive in!
 
-# ⚠️Spoiler alert: a snippet of a final result 😲
+<details>
+  <summary>⚠️Spoiler alert: a snippet of a final result 😲</summary>
 
 [1 graph summarising the most insightful findings]
-explanation
-summary
+
+What is this!? Nothing in this graph looks "musical". But it actually shows some relevant insights into the music we listen! Let's dive in to see how we got this graph at the end 😉
+
+</details>
+
 
 # Procurement Map 🔴🟡🟢🟣🔵
 
