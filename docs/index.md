@@ -147,7 +147,6 @@ To provide some specific examples, these are some areas where we used ChatGPT:
 |         | Example Prompt           | Rationale  |
 | :------------- |:-------------| :-----|
 | 🔴 | " Why am I unable to get more than 50 video IDs every time I run my search function? | We used ChatGPT to recommend a solution based on a part of the API documentation that we may have missed |
-| 🔴 |  |   |
 | 🟡 |  |  |
 | 🟡 |  |   |
 | 🟢 |  |  |
