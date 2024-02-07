@@ -148,6 +148,10 @@ To provide some specific examples, these are some areas where we used ChatGPT:
 | 🔵 | "What are the effective ways to find correlations in a dataframe?"  | One of the answers is "correlation matrix". Then we will proceed to find a YouTube step-by-step tutorial of how to plot this nicely, with explanations |
 
 # Finally... Some reflections
+
+### We have quite a bit of weaknesses in this project...
+
+### Moving forward...
 * First of all, this project may have come to an end for DS105, but it is not the end for us. 
 * We have found success in multiple areas – APIs, web-scraping, data manipulation. 😄
 * But we have failed in others – building effective models, machine learning, or providing an *exhaustive* list of insights. 😢
