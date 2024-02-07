@@ -150,6 +150,11 @@ To provide some specific examples, these are some areas where we used ChatGPT:
 # Finally... Some reflections
 
 ### We have quite a bit of weaknesses in this project...
+* 🔴 We relied on Wikipedia to provide a song's genre. However, there is a significant lack of such information on Wikipedia, which can fundamentally affect our data's reliability. Our intention was to utilise our W7 Summative skills but in reality it may not be a wise choice.
+* 🟡 Web scraping is not the proper and ideal way to get Genius lyrics. We have to admit that even Genius itself do not advocate web scraping, and for data volume that is high (2000+) we are unsure if our scraper will work. We could have used other methods such as API instead, but it is much harder.
+* 🟢 While we are able to obtain a wide variety of data, we failed to understand the intrinsic reliability of them. For example, spotify gives a popularity score of a song. But what defines popularity? What metrics/regression model does spotify use to determine a song's popularity? We do not know.
+* 🟣 When analysing a song's sentiment, it can be very tricky. While nltk is a widely popular package being used, we do not know the fundamentals of how the package determines a string's sentiment. We assumed that the package is highly accurate and reflects a song's true sentiments, which is likely not the case.
+* 🔵 When plotting certain graphs, we made an assumption that there are sufficient datapoints, which may not be the case. For example, especially at the tail-end of certain plots (such as popularity), the sample size becomes very small (estimated less than 50), which affects the reliability of our data.
 
 ### Moving forward...
 * First of all, this project may have come to an end for DS105, but it is not the end for us. 
