@@ -2,30 +2,6 @@ import requests
 from scrapy import Selector
 import re
 
-def generate_song_url(song_artist, song_title):
-    '''
-    Returns a string of the URL for the Genius page of the song
-
-        Parameters:
-            song_artist (str): The artist of the song
-            song_title (str): The title of the song
-
-        Returns:
-            song_url (str): The URL for the Genius page of the song
-    '''
-    
-    base_url = 'https://genius.com/'
-    
-    # format the artist name and song title
-    song_artist = song_artist.replace('&', 'and')
-    formatted_artist = song_artist.lower().replace(' ', '-')
-    formatted_title = song_title.lower().replace(' ', '-')
-    
-    # generate the song URL by concatenating strings according to Genius formatting
-    song_url = f'{base_url}{formatted_artist}-{formatted_title}-lyrics'
-
-    return song_url
-
 def search_genius(query, access_token):
     '''
     Returns a dictionary of song title, artist and URL
