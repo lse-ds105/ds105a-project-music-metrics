@@ -12,7 +12,7 @@ What makes good music? One's taste of music is a rather subjective matter: one's
 
 This is the breakdown of our overall approach. We have categorised our approach into different categories and colour-coded them. We have 🔴 for YouTube, 🟡 for Genius, 🟢 for Spotify, 🟣 for data expansion, and 🔵 for visualisation.
 
-'screenshot'
+![Procurement Map](../images/procurement.png)
 
 # Breakdown of our tools 🔴🟡🟢🟣🔵
 
