@@ -33,15 +33,15 @@ Before we present our methodology, we will first present the tools (a surgeon ne
 
 # Our sources of data 🔴🟡🟢
 
-There were a few options for us to source for data, the most popular ones being YouTube API, Spotify API and Genius. After some trial and error, we have concluded:
+There were a few options for us to source for data. We concluded on using the YouTube API, Spotify API and Genius after some trial and error. Here are some of the considerations we had when selecting our data sources.
 
 | Scope        | YouTube 🔴          | Spotify 🟢  | Genius 🟡 |
 | :-------------|:-------------| :-----| :-----|
-| **Type** | Mostly video contents, numbers of views or likes are good popularity indicators | A lot of content available, such as artist, song duration, genre etc. | Very useful platform for lyrics of songs |
-| **Relevance** | Most data are not be relevant, except for popularity indicators such as likes or views | A wide range of data available, but API provides limited access | Highly relevant for lyrics scraping |
-| **Technicality** | Most data are available, with high upper bound limit (10,000) | Hard to obtain specific data due to privacy reasons, only content such as genre can be determined | Difficult to use API, but easy to obtain lyrics via web scraping instead |
+| **Type** | Vast amounts of data for each video, such as number of views, likes and comments, as well as duration | Categorical data such as the explicitness of a song | Huge database which contains lyrics for each song |
+| **Relevance** | Most data are relevant, although some are not very useful such as the comments of a video due to many comments by bots | API provides limited access | Highly relevant for lyrics scraping |
+| **Technicality** | Data is mostly available, although we ran into difficulty getting huge volumes of data (above 1000) | Hard to obtain specific data due to privacy reasons, only content such as genre can be determined | Webscraping and API usage was manageable, although it takes fairly long to scrape data due to the structure of the webpage |
 
-Hence, considering the strengths and weaknesses as a whole, we decided to use a combination of all 3
+Hence, considering the strengths and weaknesses as a whole, we decided to use a combination of all 3.
 
 # YouTube API 🔴
 For the Youtube API, we used three methods, namely the .search(), .videos(), and .commentThreads() methods. 
