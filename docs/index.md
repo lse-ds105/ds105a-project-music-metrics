@@ -50,6 +50,13 @@ The methods are closely linked in our code, as the output of the search_youtube(
 
 The .videos() method is used to obtain the statistics of the video, such as the number of views, likes, dislikes, comments etc. The .commentThreads() method is used to obtain the top few comments of the video.
 
+We are able to obtain a dataframe containing the video ID, title, duration, views, likes, and the top few comments of the video after merging the outputs of both functions.
+
+Example:
+
+Using the search function to obtain the video IDs of the most popular music videos in the US: \
+```youtube_search_data, video_id = search_youtube(service_youtube, 2000, "official music video", "video", "US", 10)```
+
 
 
 
@@ -62,6 +69,11 @@ Beginning with the Video Title of the most popular music videos on YouTube, we f
 Since the API does not give us the lyrics of each song directly, we had to fall back on webscraping to get the lyrics. Using the URL of each Genius page, we ran a custom webscraping function to get the lyrics of each song as a single string, while also cleaning it to remove line breaks and section headers (such as [Bridge] or [Verse]). 
 
 This enabled us to end up with cleaned data on the Title, Artist and Lyrics of each song, which we then merged together with the raw data collected from YouTube to form a final dataframe consisting of all the scraped data.
+
+Example: 
+
+Converting duration of song from minutes and seconds to only seconds \
+```cleaned_df['duration'] = cleaned_df['duration'].apply(lambda x: isodate.parse_duration(x).total_seconds())```
 
 # Spotify API 🟢
 
@@ -175,7 +187,7 @@ To provide some specific examples, these are some areas where we used ChatGPT:
 
 |         | Example Prompt           | Rationale  |
 | :------------- |:-------------| :-----|
-| 🔴 |  |  |
+| 🔴 | " Why am I unable to get more than 50 video IDs every time I run my search function? | We used ChatGPT to recommend a solution based on a part of the API documentation that we may have missed |
 | 🔴 |  |   |
 | 🟡 |  |  |
 | 🟡 |  |   |
