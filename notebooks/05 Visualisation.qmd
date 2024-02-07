@@ -1,20 +1,19 @@
 # Set-up
 
-Run these commands in the R terminal
-
-install.packages("tidyverse")
-install.packages("ggplot2")
-
 Install these packages:
+```{r}
+#install.packages("tidyverse")
+```
 
+Import these libraries:
 ```{r}
 library(tidyverse)
-library(ggplot2)
 ```
+
 
 This notebook is the final part of our project – visualisation. Using our final dataframe, we are able to visualise data through applications of R and ggplot2.
 
-Important!!! Ensure the current working directory is in the main DS folder.
+Important!!! Ensure the current working directory is in the /notebooks folder.
 
 ```{r}
 getwd()
@@ -24,11 +23,15 @@ getwd()
 df <- read.csv('../data/final_compiled.csv')
 ```
 
+Check the content:
+
 ```{r}
 head(df)
 ```
 
 # Statistical inference
+
+Here we want to plot a correlation matrix, looking for any insights that we can find. The codes below are borrowed from an (ironically) YouTube tutorial
 
 ```{r}
 selected_columns <- df[, c('like_count','view_count','comment_count', 'comments_sentiment', 'sentiment_positive', 'sentiment_neutral', 'sentiment_negative', 'sentiment_compound_absolute', 'lexical_richness', 'song_length', 'popularity')]
@@ -45,7 +48,7 @@ corr_df2 <- corr_df %>%
 ```
 
 ```{r}
-g <- ggplot(data = corr_df2, aes(x = rowname, y = column, fill = value)) +
+corr_matrix <- ggplot(data = corr_df2, aes(x = rowname, y = column, fill = value)) +
   geom_tile() +
   geom_text(aes(label = rounded_value), fill = "white", size = 3.5) + 
   scale_fill_distiller(palette = "Spectral") +
@@ -53,65 +56,91 @@ g <- ggplot(data = corr_df2, aes(x = rowname, y = column, fill = value)) +
   theme_classic() +
   theme(axis.text.x = element_text(angle = 90))
 
-print(g)
-```
+# save graph as image file
+ggsave(file.path('../images/', 'correlation_matrix.png'), corr_matrix, width = 10, height = 10, units = 'in')
 
-# Univariate plots:
+print(corr_matrix)
+```
+From the matrix, there are a few insights:
+- Not surprisingly, view count, like count and comment count are all highly correlated, with like count and view count having the strongest correlation (0.91).
+- Song length is negatively correlated with lexical richness (-0.36). This is a sign that as songs get longer, artists generally rely on previous verses instead of creating new words/phrases.
+- The sentiment compound of YouTube comments have some correlation with the positive and negative song sentiment (~0.2, an unsurprising fact) but has little correlation with all other factors, confirming our initial hypothesis that it is not relevant (0 correlation with popularity).
+- It could be surprising to some that popularity of a song is negatively correlated with lexical richness. This means that in general, people may prefer repetitive songs and focus less on the creativity of new lyrics.
+
+# Basic visualisation:
+
+Our visualisation methodology is based on trial and error. We begin with some insights that we can find from basic visualisations.
 
 ```{r}
-ggplot(df, aes(x = markets, y = popularity)) +
+box_plot <- ggplot(df, aes(x = markets, y = popularity)) +
   geom_boxplot()
+
+# save graph as image file
+ggsave(file.path('../images/', 'box_plot.png'), box_plot, width = 10, height = 10, units = 'in')
+
+print(box_plot)
 ```
 
-Insight: songs with many genres tend not to be popular
+From plot, it may be surprising that songs that are released in all 184 markets tend to be less popular. It may be a sign that quantity is generally compromised at the expense of quality, and songs that "spread too thin" and go too global may be less popular. In contrary, songs that are targeted at only a few markets seem to have very consistent level of popularity, capturing their niche audience.
 
 ```{r}
-ggplot(df, aes(x = view_count, y = like_count, color = genre_level)) +
+genre_line_graph <- ggplot(df, aes(x = view_count, y = like_count, color = genre_level)) +
   geom_point(alpha = 0.5) +
   geom_smooth(method = "lm", se = FALSE, color = "black")
+
+# save graph as image file
+ggsave(file.path('../images/', 'genre_line_graph.png'), genre_line_graph, width = 10, height = 10, units = 'in')
+
+print(genre_line_graph)
 ```
 
-Insight: idk. Obvious that view count like count correlated
-
-```{r}
-
-```
-
-```{r}
-
-```
+We know that like count and view count has the highest correlation. But are there any insights if we categorise the data? Here we categorised into the number of genres that the songs are in. However, there seems to have no insights here. (We tried plotting with other categorisations such as "explicitness" and "markets", but the results are similar.)
 
 ```{r}
 df$release_date <- as.Date(df$release_date)
 
-ggplot(df, aes(x = release_date, y = popularity, colour = explicitness)) +
+explicitness_graph <- ggplot(df, aes(x = release_date, y = popularity, colour = explicitness)) +
   geom_smooth(method = "lm") +
   scale_x_date(
     limits = as.Date(c("2000-01-01", "2024-01-01"))
   ) +
   ylim(0, 100)
+
+# save graph as image file
+ggsave(file.path('../images/', 'explicitness_graph.png'), explicitness_graph, width = 10, height = 10, units = 'in')
+
+print(explicitness_graph)
 ```
 
-# Multivariate plots
+What about some potential trends over time? From plot above, we can see that at a reasonable confidence interval (95%), explicit songs have become slightly less popular. This is a sign that people's underlying preference for explicit songs may be gradually shifting over time.
+
+# More complex visualisation
+
+In this section, the visualisations will be more comparative in nature, where we obtain insights by comparing multiple factors.
 
 ```{r}
-ggplot(df, aes(lexical_richness, after_stat(count), fill = markets)) +
+explicitness_map <- ggplot(df, aes(release_date, after_stat(count), fill = explicitness)) +
   geom_density(position = "fill")
+
+# save graph as image file
+ggsave(file.path('../images/', 'explicitness_map.png'), explicitness_map, width = 10, height = 10, units = 'in')
+
+print(explicitness_map)
 ```
 
-Insight: songs available in very few markets neither tend to have excessive nor limited vocabulary. Perhaps a sign that these songs are rigid af thats why banned???
+Here we once again compare the level of explicitness over time. It is reasonable for us to assume that the "explicitness" category was not available prior to ~1990, hence we ignore the first portion of the graph. It is interesting to note that there are two "bull runs" of explicit songs. Around 2000, there could be a possible watershed event (wild guess: 911) which affected the song market so much that artists start to release more non explicit songs.
 
 ```{r}
-ggplot(df, aes(release_date, after_stat(count), fill = explicitness)) +
-  geom_density(position = "fill")
-```
-
-Insight: pre 1990 - assume "explicitness" is not an available category. Noticed two "waves" of rise in explicitness. Peaked at 2001. 9-11 attack??? plane crash then stopped having explicit songs
-
-```{r}
-ggplot(df, aes(release_date, fill = markets)) +
+markets_density_graph <- ggplot(df, aes(release_date, fill = markets)) +
   geom_density(position = "stack")
+
+# save graph as image file
+ggsave(file.path('../images/', 'markets_density_graph.png'), markets_density_graph, width = 10, height = 10, units = 'in')
+
+print(markets_density_graph)
 ```
+
+This graph presents a perspective of how the market availability of songs change over time. The first trend is that there is an exponential increase in number of songs over time, which is not surprising at all. What we found insightful here is that from year 2000 to around 2008, artists tend to release songs that only exist in very few markets. From 2008 onwards, there is a significant trend reversal where most songs are available in global markets. This could be an indicator of the shift in level of globalisation/cultural changes/censorship policies during that period.
 
 ```{r}
 density <- ggplot(df, aes(x = sentiment_compound, y = lexical_richness)) +
@@ -119,62 +148,57 @@ density <- ggplot(df, aes(x = sentiment_compound, y = lexical_richness)) +
  geom_density_2d_filled(alpha = 0.5) +
  geom_density_2d(linewidth = 0.25, colour = "black")
 
- density
+# save graph as image file
+ggsave(file.path('../images/', 'density.png'), density, width = 10, height = 10, units = 'in')
+
+print(density)
 ```
 
-Insight: more happy than sad songs in general. Seems like vocabulary richness of happy songs tend to be slightly less than sad ones. What if we further categorise them?
+Here, we experimented with heat maps instead to understand the sentiment compound of a song further, and see if it has anything to do with the lexical richness. Firstly, we realise that songs tend to be extreme - either happy or sad instead of neutral. Secondly, there seems to be more happy songs than sad ones. However, we want to dive in deeper and see if there are more insights:
 
 ```{r}
-density + facet_wrap(vars(explicitness))
+density_and_explicitness <- density + facet_wrap(vars(explicitness))
+
+# save graph as image file
+ggsave(file.path('../images/', 'density_and_explicitness.png'), density_and_explicitness, width = 10, height = 10, units = 'in')
+
+print(density_and_explicitness)
 ```
+
+When we further break down into level of explicitness - we see a much larger difference. Vast majority of songs that are non-explicit are happy songs. For songs that are explicit, the distinction is less obvious - there is a more even spread of happy and sad songs.
+
 ```{r}
-density + facet_wrap(vars(genre_level))
+density_and_genre <- density + facet_wrap(vars(genre_level))
+
+# save graph as image file
+ggsave(file.path('../images/', 'density_and_genre.png'), density_and_genre, width = 10, height = 10, units = 'in')
+
+print(density_and_genre)
 ```
 
-If categorise into explicit or not, non-explicit songs are mostly happy, but explicit ones have a more even spread.
+When we break down into genre level, we notice some distinct differences in terms of lexical richness. For songs that belong to multiple genres, happy songs tend to use a wider range of vocabulary than sad ones. Conversely, for simple songs which belong to a single genre, sad songs use a wider range of vocabulary instead.
 
 ```{r}
-ggplot(df, aes(x = popularity, colour = explicitness, fill = explicitness)) +
+density_and_popularity <- ggplot(df, aes(x = popularity, colour = genre_level, fill = genre_level)) +
   geom_density(alpha = 0.2)
+
+# save graph as image file
+ggsave(file.path('../images/', 'density_and_popularity.png'), density_and_popularity, width = 10, height = 10, units = 'in')
+
+print(density_and_popularity)
 ```
 
-Insight: explicit songs less popular
+It seems that the genre level can affect the nature of a song by quite a bit, so we hypothesised that it should affect a song's popularity as well. But does it? Surprisingly, we can see that the distribution is very similar for all songs regardless of whether they belong to a lot of genre or just one. This rejects our hypothesis that it has a significant effect on popularity.
 
 ```{r}
-ggplot(df, aes(x = popularity, colour = markets, fill = markets)) +
-  geom_density(alpha = 0.2)
+sentiment_and_genre <- ggplot(df, aes(x = sentiment_compound_absolute, colour = genre_level, fill = genre_level)) +
+  geom_density(alpha = 0.2) +
+  xlim(0.95, 1)
+
+# save graph as image file
+ggsave(file.path('../images/', 'sentiment_and_genre.png'), sentiment_and_genre, width = 10, height = 10, units = 'in')
+
+print(sentiment_and_genre)
 ```
 
-Insight: niche market songs tend to be very popular – but has some risks (peaks at low popularity)
-
-```{r}
-library(ggradar)
-```
-
-```{r}
-
-```
-
-```{r}
-
-```
-
-```{r}
-
-```
-
-```{r}
-
-```
-
-```{r}
-
-```
-
-```{r}
-
-```
-
-```{r}
-
-```
+But what about the sentiment of a song? Note that most songs tend to be extreme in terms of sentiments, hence we limit the x-axis from 0.95 onwards. Here we see a clear distinction of how genre level affects the "sentiment extremity" of a song. Songs belong to lots of genres have a much higher level of extreme sentiments than songs that only below to a few/one genre.
