@@ -25,7 +25,6 @@ def search_youtube(any_youtube, max_results: int, query: str, searchtype: str, r
 
         # Execute the request and get the response
         youtube_search_response = youtube_search_request.execute()
-        print(youtube_search_response['pageInfo']['totalResults'])
 
         # iterate through each element in the nested dictionary to get the relevant values of each video
         for item in youtube_search_response.get('items', []):
@@ -70,8 +69,7 @@ def get_stats(any_youtube, videoId:list):
 
         video_response = video_request.execute()
 
-        print(len(video_response['items']))
-        pprint(video_response['items'])
+
 
     # iterate through each element in the nested dictionary to get the relevant values
         for item in video_response['items']:
@@ -116,7 +114,6 @@ def get_comments_in_videos(youtube, video_ids):
                 videoId=video_ids[i]
             )
             response = request.execute()
-            print(response)
            
             comments_in_video = [comment['snippet']['topLevelComment']['snippet']['textOriginal'] for comment in response['items'][0:10]] 
             comments_in_video_info = {'video_id':video_ids[i], 'comments': comments_in_video}
