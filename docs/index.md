@@ -165,25 +165,24 @@ Here we once again compare the level of explicitness over time. It is reasonable
 
 This graph presents a perspective of how the market availability of songs change over time. The first trend is that there is an exponential increase in number of songs over time, which is not surprising at all. What we found insightful here is that from year 2000 to around 2008, artists tend to release songs that only exist in very few markets. From 2008 onwards, there is a significant trend reversal where most songs are available in global markets. This could be an indicator of the shift in level of globalisation/cultural changes/censorship policies during that period.
 
+![Density and Explicitness](../images/density.png)
 
-![Density and Explicitness](../images/density_and_explicitness.png)
 
 Here, we experimented with heat maps instead to understand the sentiment compound of a song further, and see if it has anything to do with the lexical richness. Firstly, we realise that songs tend to be extreme - either happy or sad instead of neutral. Secondly, there seems to be more happy songs than sad ones. However, we want to dive in deeper and see if there are more insights:
 
-
-![Density and Genre](../images/density_and_genre.png)
+![Density and Explicitness](../images/density_and_explicitness.png)
 
 When we further break down into level of explicitness - we see a much larger difference. Vast majority of songs that are non-explicit are happy songs. For songs that are explicit, the distinction is less obvious - there is a more even spread of happy and sad songs.
 
-![density_and_popularity](../images/density_and_popularity.png)
+![Density and Genre](../images/density_and_genre.png)
 
 When we break down into genre level, we notice some distinct differences in terms of lexical richness. For songs that belong to multiple genres, happy songs tend to use a wider range of vocabulary than sad ones. Conversely, for simple songs which belong to a single genre, sad songs use a wider range of vocabulary instead.
 
-![sentiment_and_genre](../images/sentiment_and_genre.png)
+![density_and_popularity](../images/density_and_popularity.png)
 
 It seems that the genre level can affect the nature of a song by quite a bit, so we hypothesised that it should affect a song's popularity as well. But does it? Surprisingly, we can see that the distribution is very similar for all songs regardless of whether they belong to a lot of genre or just one. This rejects our hypothesis that it has a significant effect on popularity.
 
-![Box](../images/box_plot.png)
+![sentiment_and_genre](../images/sentiment_and_genre.png)
 
 But what about the sentiment of a song? Note that most songs tend to be extreme in terms of sentiments, hence we limit the x-axis from 0.95 onwards. Here we see a clear distinction of how genre level affects the "sentiment extremity" of a song. Songs belong to lots of genres have a much higher level of extreme sentiments than songs that only below to a few/one genre.
 
